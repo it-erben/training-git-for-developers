@@ -61,7 +61,7 @@ Dein Trainer gibt dir:
 
 ## Phase 3: Commit und Push
 
-7. Füge alle Aenderungen zur Staging Area hinzu:
+7. Füge alle Änderungen zur Staging Area hinzu:
    ```bash
    git add -A
    ```
@@ -78,42 +78,32 @@ Dein Trainer gibt dir:
 
 ## Phase 4: Pipeline beobachten
 
-10. Oeffne dein Repository auf GitHub und klicke auf den Tab **Actions**.
+10. Öffne dein Repository auf GitHub und klicke auf den Tab **Actions**.
 
 11. Du siehst einen laufenden Workflow **CI/CD**. Klicke darauf und
     beobachte die einzelnen Schritte:
 
-    | Schritt | Was passiert | Dauer |
-    |---------|-------------|-------|
-    | Initialization | AL-Go liest die Konfiguration | ~1 Min |
-    | Build | Der AL-Compiler baut deine `.app`-Datei | ~18 Min |
-    | Deploy | Die App wird in die BC-Sandbox installiert | ~2 Min |
+    | Schritt        | Was passiert                               | Dauer   |
+    |----------------|--------------------------------------------|---------|
+    | Initialization | AL-Go liest die Konfiguration              | ~1 Min  |
+    | Build          | Der AL-Compiler baut deine `.app`-Datei    | ~18 Min |
+    | Deploy         | Die App wird in die BC-Sandbox installiert | ~2 Min  |
 
-12. Warte, bis die Pipeline gruen ist (ca. 20 Minuten).
+12. Warte, bis die Pipeline grün ist (ca. 20 Minuten).
 
-## Phase 5: Ergebnis pruefen
+## Phase 5: Ergebnis prüfen
 
-13. Oeffne die BC-Sandbox im Browser:
+13. Öffne die BC-Sandbox im Browser:
     ```
     https://businesscentral.dynamics.com
     ```
 
 14. Suche nach deiner **Training Items**-Seite (Suchleiste oder Alt+Q).
 
-15. Du siehst deine leere Liste. Lege testweise ein paar Eintraege an.
+15. Du siehst deine leere Liste. Lege testweise ein paar Einträge an.
 
-Herzlichen Glueckwunsch! Du hast gerade:
+Herzlichen Glückwunsch! Du hast gerade:
 - Ein Git-Repository aus einem Template erstellt
-- Eine Aenderung committet und gepusht
-- Eine automatische CI/CD-Pipeline ausgeloest
+- Eine Änderung committet und gepusht
+- Eine automatische CI/CD-Pipeline ausgelöst
 - Eine Anwendung in eine Cloud-Umgebung deployt
-
-## Zusammenfassung
-
-| Befehl | Beschreibung |
-|--------|-------------|
-| `git clone <url>` | Repository klonen |
-| `git diff` | Unstaged Aenderungen anzeigen |
-| `git add -A` | Alle Aenderungen stagen |
-| `git commit -m "..."` | Commit erstellen |
-| `git push` | Commits zum Remote senden |
