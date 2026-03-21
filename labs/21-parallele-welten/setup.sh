@@ -167,6 +167,12 @@ git commit -m "Add analytics module with reporting and setup"
 ANALYTICS_TIP=$(git rev-parse HEAD)
 git switch "$DEFAULT_BRANCH"
 
+# === Version-Bump auf main (erzeugt Konflikte beim Merge der Feature-Branches) ===
+sed -i.bak 's/"version": "1.0.0.0"/"version": "1.0.1.0"/' app.json
+rm -f app.json.bak
+git add .
+git commit -m "Bump version for patch release"
+
 # === Fehlerhafter Commit auf main ===
 sed -i.bak "s/Message('Base module initialized');/Message('Base module initialized'); \/\/ BUG: this breaks error handling/" src/Base.al
 rm -f src/Base.al.bak
@@ -198,6 +204,6 @@ echo "  - Du bist im Detached HEAD auf dem ersten Commit"
 echo "  - feature/customer-fields: Wartet auf Merge"
 echo "  - feature/vendor-page: Wartet auf Merge"
 echo "  - feature/analytics: GELÖSCHT (war wichtig!)"
-echo "  - main: Hat einen fehlerhaften Commit"
+echo "  - master: Hat einen fehlerhaften Commit"
 echo ""
 echo "  git log --oneline --graph --all"

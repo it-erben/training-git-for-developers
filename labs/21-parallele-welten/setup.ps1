@@ -160,6 +160,11 @@ git commit -m "Add analytics module with reporting and setup"
 $AnalyticsTip = git rev-parse HEAD
 git switch master
 
+# === Version-Bump auf main (erzeugt Konflikte beim Merge der Feature-Branches) ===
+(Get-Content app.json) -replace '"version": "1.0.0.0"', '"version": "1.0.1.0"' | Set-Content app.json
+git add .
+git commit -m "Bump version for patch release"
+
 # === Fehlerhafter Commit auf main ===
 (Get-Content src/Base.al) -replace "Message\('Base module initialized'\);", "Message('Base module initialized'); // BUG: this breaks error handling" | Set-Content src/Base.al
 
@@ -194,6 +199,6 @@ Write-Host "  - Du bist im Detached HEAD auf dem ersten Commit"
 Write-Host "  - feature/customer-fields: Wartet auf Merge"
 Write-Host "  - feature/vendor-page: Wartet auf Merge"
 Write-Host "  - feature/analytics: GELOESCHT (war wichtig!)"
-Write-Host "  - main: Hat einen fehlerhaften Commit"
+Write-Host "  - master: Hat einen fehlerhaften Commit"
 Write-Host ""
 Write-Host "  git log --oneline --graph --all"

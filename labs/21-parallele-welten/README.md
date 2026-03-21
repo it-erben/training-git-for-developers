@@ -34,7 +34,7 @@ Du landest nach dem Setup in einem seltsamen Zustand.
 **Aufgabe:**
 
 1. Finde heraus, was "Detached HEAD" bedeutet und wo du gerade stehst.
-2. Wechsle zurück auf `main`.
+2. Wechsle zurück auf `master`.
 3. Was wäre passiert, wenn du in diesem Zustand Commits gemacht hättest?
 
 > Im Detached-HEAD-Zustand zeigt HEAD direkt auf einen Commit
@@ -58,7 +58,7 @@ war wichtig.
 
 ## Phase 3: Feature-Branches mergen
 
-Es gibt drei Feature-Branches, die in `main` integriert werden müssen. Jeder
+Es gibt drei Feature-Branches, die in `master` integriert werden müssen. Jeder
 bringt eigene Herausforderungen:
 
 ### Branch A: `feature/customer-fields`
@@ -66,7 +66,7 @@ bringt eigene Herausforderungen:
 - Ändert `app.json` (Version) und `src/CustomerListExt.al`
 - **Erwartung:** Merge-Konflikt in `app.json`
 
-**Aufgabe:** Merge in `main` und löse die Konflikte.
+**Aufgabe:** Merge in `master` und löse die Konflikte.
 
 ### Branch B: `feature/vendor-page`
 
@@ -74,12 +74,12 @@ bringt eigene Herausforderungen:
 - **Erwartung:** Erneut Konflikt in `app.json`, da du gerade die Version beim
   Merge von Branch A gesetzt hast.
 
-**Aufgabe:** Merge in `main`. Entscheide: Welche Version soll `app.json` jetzt
+**Aufgabe:** Merge in `master`. Entscheide: Welche Version soll `app.json` jetzt
 bekommen?
 
 ### Branch C: `feature/analytics` (der wiederhergestellte)
 
-- Basiert auf einem älteren Stand von `main`.
+- Basiert auf einem älteren Stand von `master`.
 
 **Aufgabe:** Hier hast du die Wahl:
 
@@ -93,12 +93,12 @@ Probiere **beide Optionen** aus:
    git branch feature/analytics-rebase feature/analytics
    ```
 2. Merge die eine Kopie direkt.
-3. Rebase die andere Kopie auf `main` und merge dann.
+3. Rebase die andere Kopie auf `master` und merge dann.
 4. Vergleiche die Graphen.
 
 ## Phase 4: Fehlerhafte Commits rückgängig machen
 
-Auf `main` gibt es einen Commit, der "versehentlich" gepusht wurde und einen Bug
+Auf `master` gibt es einen Commit, der "versehentlich" gepusht wurde und einen Bug
 enthält.
 
 **Aufgabe:**
@@ -120,20 +120,3 @@ enthält.
    ```bash
    git log --oneline --graph --all
    ```
-
-## Phase 6: Merge-Strategien diskutieren
-
-Beantworte im Team:
-
-1. In welchen Situationen war Fast-Forward sinnvoll?
-2. Wann wolltet ihr explizit einen Merge-Commit?
-3. Wann hat Rebase einen Vorteil gebracht?
-4. Sollte `main` "linear" bleiben oder dürfen Merge-Commits darin sein?
-
-## Validierung
-
-- Alle Feature-Branches sind in `main` integriert.
-- `feature/analytics` wurde erfolgreich wiederhergestellt.
-- Der fehlerhafte Commit wurde per Revert rückgängig gemacht.
-- Alle Feature-Branches sind gelöscht.
-- `git log --graph --oneline` zeigt einen nachvollziehbaren Verlauf.
