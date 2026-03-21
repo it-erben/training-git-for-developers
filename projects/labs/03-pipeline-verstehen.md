@@ -1,6 +1,6 @@
 # Lab 3: Die CI/CD Pipeline verstehen
 
-In dieser Uebung schaust du unter die Haube der Pipeline. Du lernst,
+In dieser Übung schaust du unter die Haube der Pipeline. Du lernst,
 wie GitHub Actions Workflows aufgebaut sind, was die einzelnen Schritte
 tun und wie du Fehler in der Pipeline erkennst und behebst.
 
@@ -20,13 +20,16 @@ git pull
    ```bash
    ls .github/workflows/
    ```
-   Du siehst mehrere YAML-Dateien. Die wichtigsten:
+   Du siehst ca. 20 YAML-Dateien. Diese stammen aus Microsofts
+   [AL-Go for GitHub](https://github.com/microsoft/AL-Go) Template —
+   einem vorgefertigten CI/CD-Framework speziell fuer
+   Business-Central-Projekte. Fuer uns sind nur drei davon relevant:
 
-   | Datei | Zweck |
-   |-------|-------|
-   | `CICD.yaml` | Hauptpipeline: Build + Deploy bei Push/PR |
-   | `PullRequestHandler.yaml` | Pipeline fuer Pull Requests |
-   | `PublishToEnvironment.yaml` | Manuelles Deployment |
+   | Datei                       | Zweck                                     |
+   |-----------------------------|-------------------------------------------|
+   | `CICD.yaml`                 | Hauptpipeline: Build + Deploy bei Push/PR |
+   | `PullRequestHandler.yaml`   | Pipeline für Pull Requests                |
+   | `PublishToEnvironment.yaml` | Manuelles Deployment                      |
 
 2. Oeffne `CICD.yaml` in deinem Editor und suche nach dem Trigger-Block:
    ```bash
@@ -53,7 +56,7 @@ Pipeline-Logs zu lesen sind.
    git switch -c experiment/break-the-build
    ```
 
-5. Oeffne `app/TrainingItem.Table.al` und fuege einen Syntaxfehler ein.
+5. Oeffne `app/TrainingItem.Table.al` und füge einen Syntaxfehler ein.
    Aendere z.B. `table` zu `taable`:
    ```al
    taable 50100 "Training Item"
