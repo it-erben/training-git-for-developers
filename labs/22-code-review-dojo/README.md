@@ -2,28 +2,22 @@
 
 ## Hintergrund
 
-In diesem Lab durchlauft ihr als Team den vollständigen PR-Workflow auf GitHub
-oder GitLab. Ihr arbeitet zu zweit: Jeder erstellt einen Feature-Branch mit
-absichtlichen Schwächen, der Partner reviewt ihn. Dabei nutzt ihr die vollen
-Möglichkeiten der Plattform: Suggestions, Draft PRs und die verschiedenen
-Merge-Strategien.
-
-Dieses Lab verknüpft die technischen Git-Kenntnisse mit der Praxis
-kollaborativer Softwareentwicklung.
-
-**Zeitbedarf:** 60 Minuten
+In diesem Lab durchlauft ihr als Team den vollständigen PR-Workflow auf GitHub.
+Ihr arbeitet zu zweit: Jeder erstellt einen Feature-Branch mit absichtlichen
+Schwächen, der Partner reviewt ihn. Dabei nutzt ihr die vollen Möglichkeiten
+der Plattform: Suggestions, Draft PRs und die verschiedenen Merge-Strategien.
 
 ## Vorbereitung
 
 1. Bildet Zweierteams.
-2. Öffne das Terminal im Verzeichnis `labs/22-code-review-dojo/exercise`.
-3. Erstellt ein gemeinsames Repository auf GitHub/GitLab und pusht die Basis:
+2. Akzeptiert die GitHub-Classroom-Einladung — tretet eurem Team bei oder
+   erstellt ein neues.
+3. Klont das Repository:
+
    ```bash
-   cd exercise
-   git remote add origin <url>
-   git push -u origin main
+   git clone <url-aus-classroom>
+   cd <repo-name>
    ```
-4. Ladet den Partner als Collaborator ein.
 
 ## Phase 1: Feature-Branches erstellen
 
@@ -44,7 +38,7 @@ Feature. Baut dabei **absichtlich** Probleme ein, die der Reviewer finden soll:
 - Erstelle `src/CustomerExport.al` — eine Export-Funktion.
 - Eingebaute Probleme:
   - Hardcodierte Werte statt Konstanten
-  - Fehlender Fehlerfall (was wenn keine Daten?)
+  - Fehlender Fehlerfall (was, wenn keine Daten?)
   - Ein Commit enthält eine unzugehörige Änderung (z.B. Version-Bump, der hier
     nicht hingehört)
 
@@ -111,7 +105,7 @@ Wechselt die Rollen. Jeder reviewt den PR des Partners.
 
 Arbeitet das Feedback ein:
 
-1. **Suggestions:** Klicke "Apply Suggestion" direkt auf GitHub/GitLab (erstellt
+1. **Suggestions:** Klicke "Apply Suggestion" direkt auf GitHub (erstellt
    einen Commit automatisch).
 2. **Code-Änderungen:** Lokal bearbeiten, committen und pushen.
 3. **Commit-Hygiene:** Nutze Interactive Rebase, um die WIP-Commits aufzuräumen:
@@ -146,21 +140,3 @@ Falls ihr Admin-Rechte habt:
    - Require linear history (optional — diskutiert!)
 2. Versucht, direkt auf `main` zu pushen. Was passiert?
 3. Versucht, einen PR ohne Approval zu mergen. Was passiert?
-
-## Diskussion
-
-1. **Merge-Strategie:** Wann nutzt ihr Squash, wann Merge Commit, wann Rebase?
-   Einigt euch auf eine Team-Konvention.
-2. **Review-Kultur:** Wie formuliert man Feedback konstruktiv? Was war hilfreich,
-   was war zu harsch?
-3. **Branching-Strategie:** Welches Modell passt zu euch?
-   - GitHub Flow (einfach, PR-basiert)
-   - Git Flow (main/develop/feature/release/hotfix)
-   - Trunk-Based (kurze Branches, schnelles Mergen)
-
-## Validierung
-
-- Beide PRs sind erfolgreich gemergt.
-- Jeder PR hat mindestens 5 Review-Kommentare.
-- Mindestens ein PR wurde per Squash gemergt, einer normal.
-- Ihr habt eine Team-Konvention für Merge-Strategie und Branching definiert.

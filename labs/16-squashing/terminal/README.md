@@ -52,7 +52,7 @@ Commits nachträglich zusammenfassen, umsortieren, umbenennen oder entfernen.
 
 ### Dateiinhalt aufräumen ohne zusätzlichen Commit
 
-6. Öffne `file.txt` – die Datei enthält störende `\n`-Zeichen. Entferne sie.
+6. Öffne `file.txt` - die Datei enthält störende `\n`-Zeichen. Entferne sie.
 7. Füge die Änderung hinzu und nutze `git commit --amend`, um sie in den letzten
    Commit aufzunehmen, ohne einen neuen Commit zu erzeugen.
 

@@ -14,15 +14,11 @@ footer: "CC BY-NC-SA 4.0, Alexander Erben"
 
 ## Lernziele
 
-Nach diesem Modul kannst du:
-
-- **Git Flow, GitHub Flow und Trunk-Based Development
-  unterscheiden** - Vor- und Nachteile benennen
-- **Die passende Strategie wählen** — Kriterien kennen
-- **Semantic Versioning anwenden** — Versionsnummern korrekt
-  vergeben
-- **Git Tags für Releases einsetzen** — Lightweight vs.
-  Annotated Tags unterscheiden
+- Git Flow, GitHub Flow und Trunk-Based Development
+  unterscheiden
+- Die passende Strategie für euer Team finden
+- Semantic Versioning: Versionsnummern richtig vergeben
+- Git Tags für Releases (Lightweight vs. Annotated)
 
 ---
 
@@ -54,7 +50,7 @@ Das klassische Modell (Vincent Driessen, 2010):
 
 ---
 
-## 2.1 Git Flow — Ablauf
+## 2.1 Git Flow - Ablauf
 
 ![h:250](images/gitflow.drawio.svg)
 
@@ -65,7 +61,7 @@ Das klassische Modell (Vincent Driessen, 2010):
 
 ---
 
-## 2.2 Git Flow — Bewertung
+## 2.2 Git Flow - Bewertung
 
 **Vorteile:**
 
@@ -75,7 +71,7 @@ Das klassische Modell (Vincent Driessen, 2010):
 
 **Nachteile:**
 
-- Komplex — viele Branches gleichzeitig
+- Komplex - viele Branches gleichzeitig
 - Langsamer Feedback-Zyklus
 - `develop` kann zum Bottleneck werden
 
@@ -118,7 +114,7 @@ Einfacheres Modell, PR-basiert:
 
 **Nachteile:**
 
-- Nur ein Produktions-Branch — kein paralleles
+- Nur ein Produktions-Branch - kein paralleles
   Release-Management
 - Setzt gute Test-Automatisierung voraus
 - Hotfixes haben keinen eigenen Workflow
@@ -171,9 +167,9 @@ MAJOR.MINOR.PATCH
 
 **Beispiele:**
 
-- `1.0.0` → `1.0.1` — Bugfix
-- `1.0.1` → `1.1.0` — Neues Feature
-- `1.1.0` → `2.0.0` — Breaking Change
+- `1.0.0` → `1.0.1` - Bugfix
+- `1.0.1` → `1.1.0` - Neues Feature
+- `1.1.0` → `2.0.0` - Breaking Change
 
 > Spezifikation: <https://semver.org>
 
@@ -211,7 +207,7 @@ Tags markieren einen Commit als Release-Punkt.
 git tag v1.3.0
 ```
 
-**Annotated Tag** (empfohlen — mit Metadaten):
+**Annotated Tag** (empfohlen - mit Metadaten):
 
 ```bash
 git tag -a v1.3.0 -m "Release 1.3.0: Customer list extension"

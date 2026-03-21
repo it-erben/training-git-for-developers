@@ -2,7 +2,7 @@
 
 In der vorherigen Übung hat Git die Änderungen zweier Branches automatisch zusammengeführt, weil sie unterschiedliche Dateien betroffen haben. Aber was passiert, wenn auf beiden Branches **die gleiche Stelle** in der gleichen Datei geändert wurde? Dann kann Git nicht automatisch entscheiden, welche Version korrekt ist, und meldet einen **Merge-Konflikt**.
 
-Konflikte sind kein Fehler – sie sind ein normaler Teil der Zusammenarbeit. In dieser Übung lernst du, wie du sie erkennst, löst und den Merge abschließt.
+Konflikte sind kein Fehler - sie sind ein normaler Teil der Zusammenarbeit. In dieser Übung lernst du, wie du sie erkennst, löst und den Merge abschließt.
 
 ## Vorbereitung
 
@@ -22,7 +22,7 @@ source setup.sh
 
 ### Den Konflikt verstehen
 
-2. Führe `git status` aus. Git zeigt dir an, welche Dateien Konflikte enthalten – sie werden als **both modified** markiert.
+2. Führe `git status` aus. Git zeigt dir an, welche Dateien Konflikte enthalten - sie werden als **both modified** markiert.
 
 3. Öffne die betroffene Datei in deinem Editor. Du wirst sogenannte **Konfliktmarker** sehen:
    ```

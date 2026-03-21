@@ -1,4 +1,4 @@
-# Übung 9: Git Reset – Commits zurücknehmen
+# Übung 9: Git Reset - Commits zurücknehmen
 
 Mit `git reset` kannst du den Branch-Zeiger auf einen früheren Commit
 zurücksetzen. Das ist nützlich, wenn du Commits rückgängig machen möchtest, die
@@ -11,7 +11,7 @@ der Reset unterschiedlich auf die drei Bereiche von Git aus:
 - **`--mixed`** (Standard): Setzt den Branch-Zeiger und die Staging Area zurück.
   Das Working Directory bleibt unverändert. Die Änderungen sind noch da, aber
   nicht mehr gestaged.
-- **`--hard`**: Setzt alles zurück – Branch-Zeiger, Staging Area und Working
+- **`--hard`**: Setzt alles zurück - Branch-Zeiger, Staging Area und Working
   Directory. **Alle Änderungen gehen verloren!**
 
 > **Wichtig:** `git reset` verändert die Historie. Verwende es nur für lokale,
@@ -26,7 +26,7 @@ der Reset unterschiedlich auf die drei Bereiche von Git aus:
 
 1. Schau dir dein Arbeitsverzeichnis an. Welche Dateien existieren?
 2. Überprüfe die Historie mit `git log --oneline` und die Staging Area mit
-   `git status`. Merk dir den Zustand – nach jedem Reset wirst du ihn erneut
+   `git status`. Merk dir den Zustand - nach jedem Reset wirst du ihn erneut
    prüfen.
 
 ### Reset --soft: Nur den Branch-Zeiger zurücksetzen
@@ -55,7 +55,7 @@ der Reset unterschiedlich auf die drei Bereiche von Git aus:
 8. Überprüfe:
     - **Working Directory:** Eine Datei ist verschwunden!
     - **`git log --oneline`:** Der Commit ist weg.
-    - **`git status`:** Alles sauber – die Änderungen sind unwiderruflich
+    - **`git status`:** Alles sauber - die Änderungen sind unwiderruflich
       entfernt.
 
 ### Vergleich: git revert

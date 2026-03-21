@@ -9,10 +9,10 @@ Genau für dieses Szenario gibt es `git bisect`. Der Befehl nutzt eine **binäre
 Suche** (Binary Search) über die Commit-Historie: Du sagst Git, welcher Commit
 definitiv gut war und welcher schlecht ist, und Git springt automatisch zum
 Commit in der Mitte. Du testest, ob der Fehler dort vorhanden ist, und Git
-halbiert den Suchbereich weiter – bis der exakte Commit gefunden ist, der den
+halbiert den Suchbereich weiter - bis der exakte Commit gefunden ist, der den
 Bug eingeführt hat.
 
-Bei *n* Commits braucht die binäre Suche nur *log₂(n)* Schritte – bei 1000
+Bei *n* Commits braucht die binäre Suche nur *log₂(n)* Schritte - bei 1000
 Commits also nur etwa 10 Tests statt 1000.
 
 ## Vorbereitung

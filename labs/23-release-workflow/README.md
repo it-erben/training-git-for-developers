@@ -11,8 +11,6 @@ Dieses Lab ist die Abschlussübung und integriert nahezu alle bisher gelernten
 Konzepte: Bisect, Interactive Rebase, Cherry-Pick, Tags, Release-Branches und
 Hotfixes.
 
-**Zeitbedarf:** 90 Minuten
-
 ## Vorbereitung
 
 Öffne das Terminal im Verzeichnis `labs/23-release-workflow/exercise`.
@@ -187,19 +185,3 @@ werden — auf der Live-Version.
    git tag
    git log --oneline --graph --all
    ```
-
-## Validierung
-
-- `git tag` zeigt `v1.0.0`, `v1.0.1` und `v1.1.0`.
-- Der Bugfix (Calculator) und der Hotfix (Publisher) sind sowohl in `v1.1.0` als
-  auch in `main` enthalten.
-- Der Feature-Branch hat saubere Commits (keine WIP/fix).
-- `CHANGELOG.md` existiert mit den Änderungen seit v1.0.0.
-- Alle temporären Branches sind gelöscht.
-
-## Diskussion
-
-1. Wie hat sich `git bisect` angefühlt im Vergleich zu manueller Suche?
-2. Was war schwieriger: Interactive Rebase oder der Cherry-Pick mit Konflikten?
-3. Wie würdet ihr den Release-Prozess in eurem Team automatisieren?
-4. Welche Teile dieses Workflows könnte eine CI/CD-Pipeline übernehmen?

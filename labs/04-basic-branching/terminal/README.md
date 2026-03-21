@@ -1,8 +1,8 @@
-# Übung 4: Branching – Arbeiten mit Branches
+# Übung 4: Branching - Arbeiten mit Branches
 
 Branches (Verzweigungen) sind eines der mächtigsten Konzepte in Git. Ein Branch
 ist im Grunde nur ein leichtgewichtiger Zeiger auf einen Commit. Dadurch ist das
-Erstellen und Wechseln von Branches in Git extrem schnell – ganz anders als in
+Erstellen und Wechseln von Branches in Git extrem schnell - ganz anders als in
 älteren Versionskontrollsystemen.
 
 In dieser Übung erstellst du eigene Branches, wechselst zwischen ihnen und
@@ -33,7 +33,7 @@ bash setup.sh
 
 3. Erstelle einen neuen Branch mit `git branch mybranch`.
 4. Führe `git branch` erneut aus. Der neue Branch sollte in der Liste
-   auftauchen – aber du bist noch nicht auf diesem Branch.
+   auftauchen - aber du bist noch nicht auf diesem Branch.
 5. Wechsle mit `git switch mybranch` auf deinen neuen Branch.
 6. Wechsle mehrfach zwischen `master` und `mybranch` hin und her. Beobachte, wie
    sich die Ausgabe von `git status` verändert. Was fällt auf, wenn du zwischen
@@ -48,7 +48,7 @@ bash setup.sh
     sollte sichtbar sein und `mybranch` zeigt darauf.
 11. Wechsle zurück auf `master`.
 12. Führe `git log --oneline --graph` erneut aus. Der Commit, den du auf
-    `mybranch` gemacht hast, fehlt hier – er existiert nur auf dem anderen
+    `mybranch` gemacht hast, fehlt hier - er existiert nur auf dem anderen
     Branch.
 13. Erstelle eine neue Datei `file2.txt` und committe sie auf `master`.
 14. Schau dir die gesamte Historie an: `git log --oneline --graph --all`. Du
@@ -64,7 +64,7 @@ bash setup.sh
 
 > **Merke:** Wenn du den Branch wechselst, passt Git dein Arbeitsverzeichnis
 > automatisch an den Zustand des jeweiligen Branches an. Dateien erscheinen und
-> verschwinden – sie sind aber nicht verloren, sondern existieren auf ihrem
+> verschwinden - sie sind aber nicht verloren, sondern existieren auf ihrem
 > jeweiligen Branch weiter.
 
 ## Nützliche Befehle

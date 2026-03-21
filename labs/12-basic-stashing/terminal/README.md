@@ -1,7 +1,7 @@
 # Übung 12: Arbeit zwischenspeichern mit git stash
 
 Stell dir folgendes Szenario vor: Du arbeitest an einem neuen Feature, hast
-bereits einige Änderungen gemacht – teils gestagt, teils noch nicht – und
+bereits einige Änderungen gemacht - teils gestagt, teils noch nicht - und
 plötzlich wird ein dringender Bug in der Produktion gemeldet. Du musst sofort
 auf einen anderen Branch wechseln, aber deine halbfertigen Änderungen willst du
 weder committen noch verlieren.
@@ -29,8 +29,8 @@ den Bugfix bearbeiten. Anschließend holst du deine Änderungen mit
 ### Arbeit stashen
 
 2. Sichere deine aktuelle Arbeit mit `git stash`. Prüfe danach:
-    - Was zeigt `git diff`? (Leer – Working Directory ist sauber)
-    - Was zeigt `git diff --staged`? (Leer – Staging Area ist sauber)
+    - Was zeigt `git diff`? (Leer - Working Directory ist sauber)
+    - Was zeigt `git diff --staged`? (Leer - Staging Area ist sauber)
     - Was zeigt `git log --oneline`? (Unverändert)
     - Was zeigt `git stash list`? (Ein Eintrag im Stash)
 
@@ -45,7 +45,7 @@ den Bugfix bearbeiten. Anschließend holst du deine Änderungen mit
     - Welche Änderungen sind gestagt?
 
    Du wirst feststellen, dass **alle Änderungen als unstagestaged**
-   zurückkommen – auch die, die vorher in der Staging Area waren. 
+   zurückkommen - auch die, die vorher in der Staging Area waren. 
    Das kann überraschend und unerwünscht sein.
 
 ### Arbeit mit Staging-Zustand wiederherstellen
@@ -58,7 +58,7 @@ den Bugfix bearbeiten. Anschließend holst du deine Änderungen mit
    git stash apply --index
    ```
    Prüfe erneut Working Directory und Staging Area. Diesmal sollte der
-   ursprüngliche Zustand korrekt wiederhergestellt sein – gestagete Änderungen
+   ursprüngliche Zustand korrekt wiederhergestellt sein - gestagete Änderungen
    sind wieder gestagt, nicht gestagte sind im Working Directory.
 
 ### Aufräumen

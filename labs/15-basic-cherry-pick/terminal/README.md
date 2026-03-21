@@ -1,4 +1,4 @@
-# Übung 15: Cherry-Pick – Einzelne Commits gezielt übernehmen
+# Übung 15: Cherry-Pick - Einzelne Commits gezielt übernehmen
 
 Manchmal möchtest du nicht einen ganzen Branch mergen, sondern nur **bestimmte
 Commits** aus einem anderen Branch übernehmen. Genau dafür gibt es
@@ -24,7 +24,7 @@ A - B - C - D         master
 ```
 
 Die Commits `F` und `G` enthalten Änderungen, die wir auf `master` haben
-wollen – aber **nicht** die Commits `E` und `H`. Ziel ist:
+wollen - aber **nicht** die Commits `E` und `H`. Ziel ist:
 
 ```
 A - B - C - D - F' - G' master
@@ -38,8 +38,8 @@ A - B - C - D - F' - G' master
 
 1. Schau dir die gesamte Historie an: `git log --oneline --graph --all`
 2. Finde heraus, welche Dateien in den Commits `F` und `G` geändert wurden:
-    - `cat names.txt` – diese Datei wird in Commit `F` geändert
-    - `cat sentence.txt` – diese Datei wird in Commit `G` geändert
+    - `cat names.txt` - diese Datei wird in Commit `F` geändert
+    - `cat sentence.txt` - diese Datei wird in Commit `G` geändert
 
 ### Einen einzelnen Commit cherry-picken
 
@@ -49,7 +49,7 @@ A - B - C - D - F' - G' master
    ```
 4. Prüfe die Historie: `git log --oneline`. Der Commit `F` sollte jetzt als
    neuer Commit auf `master` erscheinen.
-5. Prüfe den Inhalt von `names.txt` – die Änderung aus `F` ist jetzt auf
+5. Prüfe den Inhalt von `names.txt` - die Änderung aus `F` ist jetzt auf
    `master`.
 
 ### Zurücksetzen und Bereich cherry-picken
@@ -70,17 +70,17 @@ A - B - C - D - F' - G' master
 
    > **Wichtig:** Das `^` nach dem ersten SHA ist entscheidend! Die
    Bereichsnotation `A..B` schließt den Commit `A` standardmäßig **aus**. Mit
-   `A^..B` sagst du Git: "Nimm den Commit **vor** A als Startpunkt" – damit wird
+   `A^..B` sagst du Git: "Nimm den Commit **vor** A als Startpunkt" - damit wird
    A eingeschlossen.
 
 9. Prüfe die Historie: `git log --oneline --graph`
-10. Prüfe den Inhalt von `names.txt` und `sentence.txt` – beide Änderungen
+10. Prüfe den Inhalt von `names.txt` und `sentence.txt` - beide Änderungen
     sollten jetzt auf `master` sein.
 
 > **Merke:** Cherry-Pick erstellt **neue Commits** mit neuen Hashes. Die
 > ursprünglichen Commits auf dem Feature-Branch bleiben unverändert. Das bedeutet
 > auch: Wenn du den Feature-Branch später komplett mergst, können doppelte
-> Änderungen auftauchen – Git kann das in der Regel aber automatisch erkennen und
+> Änderungen auftauchen - Git kann das in der Regel aber automatisch erkennen und
 > auflösen.
 
 ## Nützliche Befehle

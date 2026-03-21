@@ -1,12 +1,12 @@
 # Übung 19: Verlorene Commits retten mit git reflog
 
 In dieser Übung wurde der `master`-Branch auf den initialen Commit
-zurückgesetzt – und damit scheinbar wichtige Arbeit verloren. Die Datei
+zurückgesetzt - und damit scheinbar wichtige Arbeit verloren. Die Datei
 `holygrail.txt` ist verschwunden und taucht in der normalen Historie (`git log`)
 nicht mehr auf.
 
 Aber keine Panik: Git vergisst fast nie etwas! Hinter den Kulissen führt Git ein
-**Reflog** (Reference Log), das jede Bewegung des HEAD-Zeigers aufzeichnet –
+**Reflog** (Reference Log), das jede Bewegung des HEAD-Zeigers aufzeichnet -
 auch Resets, Rebases und andere Operationen, die Commits aus der sichtbaren
 Historie entfernen. Mit `git reflog` kannst du diese "versteckten" Commits
 wiederfinden und retten.
@@ -22,7 +22,7 @@ wiederfinden und retten.
 
 ### Das Problem erkennen
 
-1. Führe `git log` aus. Die Historie ist sehr kurz – es gibt nur den initialen
+1. Führe `git log` aus. Die Historie ist sehr kurz - es gibt nur den initialen
    Commit.
 2. Prüfe mit `ls`, ob `holygrail.txt` im Arbeitsverzeichnis existiert. Spoiler:
    Nein.

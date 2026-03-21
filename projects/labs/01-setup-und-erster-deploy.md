@@ -1,6 +1,6 @@
 # Lab 1: Projekt-Setup und erster Deploy
 
-In dieser Uebung richtest du dein eigenes Business-Central-Projekt ein und
+In dieser Übung richtest du dein eigenes Business-Central-Projekt ein und
 siehst, wie eine CI/CD-Pipeline automatisch deine Anwendung
 baut und in eine BC-Sandbox deployt.
 
@@ -91,14 +91,69 @@ Dein Trainer gibt dir:
 
 12. Warte, bis die Pipeline grün ist (ca. 20 Minuten).
 
+## Während du wartest: GitHub entdecken
+
+Die Pipeline braucht ca. 20 Minuten. Nutze die Zeit, um GitHub besser
+kennen zu lernen.
+
+### Keyboard Shortcuts
+
+GitHub hat Tastenkürzel für fast alles. Drücke **`?`** auf einer
+beliebigen GitHub-Seite, um die vollständige Liste zu sehen.
+
+Probiere diese Shortcuts in deinem Repository aus:
+
+| Shortcut | Wirkung                                   |
+|----------|-------------------------------------------|
+| `t`      | Dateisuche — tippe einen Dateinamen       |
+| `b`      | Blame-Ansicht für die aktuelle Datei      |
+| `l`      | Zu einer Zeilennummer springen            |
+| `w`      | Branch/Tag wechseln                       |
+| `.`      | Repository im Web-Editor (VS Code) öffnen |
+
+### Dein Repository erkunden
+
+1. **Code-Ansicht**: Klicke auf eine Datei (z.B. `app/TrainingItem.Table.al`).
+   - Klicke auf eine Zeilennummer — die URL ändert sich. So kannst du
+     einen Permalink zu einer bestimmten Zeile teilen.
+   - Klicke auf eine zweite Zeilennummer mit **Shift** gedrückt, um
+     einen Bereich zu markieren.
+
+2. **Blame**: Klicke auf **Blame** (oder drücke `b`). Du siehst für
+   jede Zeile, welcher Commit sie zuletzt geändert hat.
+
+3. **History**: Klicke auf **History** um alle Commits zu sehen, die
+   diese Datei verändert haben.
+
+4. **Network Graph**: Gehe zu **Insights** → **Network**. Hier siehst
+   du die Branch-Struktur deines Repos grafisch. Momentan ist hier noch nicht
+   so viel zu sehen, aber wenn du Lust kannst, kannst du ein paar Branches
+   mit kleinen Änderungen pushen um zu sehen, wie hier mehr Graphen erscheinen.
+
+### GitHub CLI ausprobieren
+
+Du hast `gh` schon installiert. Probiere ein paar Befehle:
+
+```bash
+# Dein Repository anzeigen
+gh repo view
+
+# Die laufende Pipeline beobachten
+gh run list
+gh run watch
+```
+
+> **Tipp:** `gh run watch` zeigt den Fortschritt live im Terminal an —
+> praktisch, wenn du nicht ständig den Browser wechseln willst.
+
 ## Phase 5: Ergebnis prüfen
 
-13. Öffne die BC-Sandbox im Browser:
+13. Öffne mit dem Trainer die BC-Sandbox im Browser:
     ```
     https://businesscentral.dynamics.com
     ```
 
-14. Suche nach deiner **Training Items**-Seite (Suchleiste oder Alt+Q).
+14. Sucht nach deiner **Training Items**-Seite (Suchleiste oder Alt+Q).
 
 15. Du siehst deine leere Liste. Lege testweise ein paar Einträge an.
 

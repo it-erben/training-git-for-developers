@@ -1,6 +1,6 @@
 # Übung 6: 3-Way-Merge
 
-In der vorherigen Übung hast du einen Fast-Forward-Merge durchgeführt – das war
+In der vorherigen Übung hast du einen Fast-Forward-Merge durchgeführt - das war
 möglich, weil sich nur ein Branch weiterentwickelt hat. In der Praxis passiert
 es aber häufig, dass **beide Branches** parallel weiterentwickelt werden. In
 diesem Fall muss Git einen **3-Way-Merge** durchführen.
@@ -17,7 +17,7 @@ beider Branches vereint.
 ### Zwei Branches parallel weiterentwickeln
 
 1. Erstelle einen neuen Branch `greeting` und wechsle darauf.
-2. Ändere den Inhalt von `greeting.txt` – schreibe deine Lieblingsbegrüßung
+2. Ändere den Inhalt von `greeting.txt` - schreibe deine Lieblingsbegrüßung
    hinein.
 3. Füge die Änderung zur Staging Area hinzu und committe sie.
 4. Wechsle zurück auf `master`.
@@ -33,7 +33,7 @@ auseinanderlaufen:
 
 7. Führe `git log --oneline --graph --all` aus. Du solltest sehen, dass die
    beiden Branches nach dem gemeinsamen Ausgangscommit in unterschiedliche
-   Richtungen laufen – jeder hat eigene Commits.
+   Richtungen laufen - jeder hat eigene Commits.
 8. Vergleiche die Branches mit `git diff master greeting`.
 
 ### 3-Way-Merge durchführen

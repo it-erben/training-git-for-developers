@@ -14,14 +14,10 @@ footer: "CC BY-NC-SA 4.0, Alexander Erben"
 
 ## Lernziele
 
-Nach diesem Modul kannst du:
-
-- **GitHub nutzen** - Repos, Issues und Projects einsetzen
-- **Pull Requests erstellen und reviewen**: Den
-  Code-Review-Workflow kennen
-- **Branch Protection Rules einrichten** - Regeln für
-  Branches definieren
-- **GitHub Actions kennen** - CI/CD-Grundlagen am Beispiel AL-Go
+- GitHub nutzen: Repos, Issues und Projects
+- Pull Requests erstellen und reviewen
+- Branch Protection Rules einrichten
+- GitHub Actions: CI/CD-Grundlagen am Beispiel AL-Go
 
 ---
 
@@ -52,7 +48,7 @@ Ein Pull Request ist ein **Vorschlag, Änderungen zu mergen**.
 4. Team reviewed den Code
 5. Nach Freigabe: PR mergen
 
-> **Kern-Idee:** Kein Code kommt direkt in `main` — alles
+> **Kern-Idee:** Kein Code kommt direkt in `main` - alles
 > läuft über Pull Requests.
 
 ---
@@ -62,8 +58,8 @@ Ein Pull Request ist ein **Vorschlag, Änderungen zu mergen**.
 **Auf GitHub:**
 
 1. "Compare & pull request" klicken (nach Push)
-2. **Titel** — Kurze Zusammenfassung (wie Commit Message)
-3. **Beschreibung** — Was wurde geändert und warum?
+2. **Titel** - Kurze Zusammenfassung (wie Commit Message)
+3. **Beschreibung** - Was wurde geändert und warum?
 4. **Reviewer** zuweisen
 5. **Labels** setzen (z.B. `bugfix`, `feature`)
 
@@ -120,9 +116,9 @@ gh pr create --draft --title "WIP: New report module"
 
 **Als Reviewer:**
 
-- **Approve** — Code ist in Ordnung
-- **Request Changes** — Änderungen nötig
-- **Comment** — Frage oder Hinweis (blockiert nicht)
+- **Approve** - Code ist in Ordnung
+- **Request Changes** - Änderungen nötig
+- **Comment** - Frage oder Hinweis (blockiert nicht)
 
 **Gute Review-Praxis:**
 

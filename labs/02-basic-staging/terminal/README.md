@@ -3,10 +3,10 @@
 In dieser Übung geht es darum, die **Staging Area** (auch Index genannt) zu
 verstehen. Git arbeitet mit drei Bereichen:
 
-- **Working Directory** – hier bearbeitest du deine Dateien ganz normal.
+- **Working Directory** - hier bearbeitest du deine Dateien ganz normal.
 - **Staging Area** - hier sammelst du mit `git add` die Änderungen, die in den
   nächsten Commit aufgenommen werden sollen.
-- **Repository** – hier landen die Änderungen dauerhaft, sobald du `git commit`
+- **Repository** - hier landen die Änderungen dauerhaft, sobald du `git commit`
   ausführst.
 
 Das Besondere: Eine Datei kann gleichzeitig unterschiedliche Änderungen im
@@ -42,7 +42,7 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 > letzten `git add`), das Working Directory enthält `v3`, und das Repository
 > enthält noch `v1`. Alle drei Bereiche haben einen unterschiedlichen Stand!
 11. Führe `git status` aus. Du wirst sehen, dass `file.txt` **zweimal** in der
-    Ausgabe erscheint – einmal als staged, einmal als modified.
+    Ausgabe erscheint - einmal als staged, einmal als modified.
 
 > Nimm' dir nun einen Moment Zeit, das sacken zu lassen. Der Unterschied zwischen
 > **Working Directory** und **Staging** ist vielleicht erstmal nicht intuitiv verständlich, 
@@ -54,7 +54,7 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 
 13. Entferne die Änderung aus der Staging Area mit
     `git restore --staged file.txt`. Die Datei im Working Directory bleibt
-    unverändert – nur die Staging Area wird zurückgesetzt.
+    unverändert - nur die Staging Area wird zurückgesetzt.
 14. Was zeigt `git status` jetzt? Die Änderung sollte nur noch als unstaged
     angezeigt werden.
 15. Stage die Änderung erneut und erstelle einen Commit.

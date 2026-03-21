@@ -24,7 +24,7 @@ Historie und das Arbeitsverzeichnis dabei verändern.
    Git öffnet einen Editor für die Commit-Nachricht des Revert-Commits.
    Bestätige die vorgeschlagene Nachricht.
 4. Schau dir die Historie erneut an: `git log --oneline`. Ein Revert fügt immer
-   einen neuen Commit hinzu – die alte Historie bleibt intakt.
+   einen neuen Commit hinzu - die alte Historie bleibt intakt.
 5. Lies erneut den Inhalt von `greeting.txt`. Die Änderung des letzten Commits
    wurde rückgängig gemacht.
 

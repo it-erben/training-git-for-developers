@@ -22,8 +22,8 @@ git pull
    ```
    Du siehst ca. 20 YAML-Dateien. Diese stammen aus Microsofts
    [AL-Go for GitHub](https://github.com/microsoft/AL-Go) Template —
-   einem vorgefertigten CI/CD-Framework speziell fuer
-   Business-Central-Projekte. Fuer uns sind nur drei davon relevant:
+   einem vorgefertigten CI/CD-Framework speziell für
+   Business-Central-Projekte. Für uns sind nur drei davon relevant:
 
    | Datei                       | Zweck                                     |
    |-----------------------------|-------------------------------------------|
@@ -31,15 +31,15 @@ git pull
    | `PullRequestHandler.yaml`   | Pipeline für Pull Requests                |
    | `PublishToEnvironment.yaml` | Manuelles Deployment                      |
 
-2. Oeffne `CICD.yaml` in deinem Editor und suche nach dem Trigger-Block:
+2. Öffne `CICD.yaml` in deinem Editor und suche nach dem Trigger-Block:
    ```bash
    head -20 .github/workflows/CICD.yaml
    ```
    Du siehst `on: push` und `on: workflow_dispatch`. Das bedeutet:
    - Die Pipeline startet automatisch bei jedem Push
-   - Sie kann auch manuell ausgeloest werden
+   - Sie kann auch manuell ausgelöst werden
 
-3. Oeffne die AL-Go Konfiguration:
+3. Öffne die AL-Go Konfiguration:
    ```bash
    cat .AL-Go/settings.json
    ```
@@ -56,8 +56,8 @@ Pipeline-Logs zu lesen sind.
    git switch -c experiment/break-the-build
    ```
 
-5. Oeffne `app/TrainingItem.Table.al` und füge einen Syntaxfehler ein.
-   Aendere z.B. `table` zu `taable`:
+5. Öffne `app/TrainingItem.Table.al` und füge einen Syntaxfehler ein.
+   Ändere z.B. `table` zu `taable`:
    ```al
    taable 50100 "Training Item"
    ```
@@ -69,8 +69,83 @@ Pipeline-Logs zu lesen sind.
    git push -u origin experiment/break-the-build
    ```
 
-7. Oeffne **Actions** auf GitHub und beobachte die Pipeline.
+7. Öffne **Actions** auf GitHub und beobachte die Pipeline.
    Nach ca. 18 Minuten wird der **Build**-Schritt fehlschlagen.
+
+## Während du wartest: GitHub Search und CLI
+
+Der Build braucht wieder ~18 Minuten. Nutze die Zeit für zwei
+praktische Werkzeuge: GitHub Code Search und die `gh` CLI.
+
+### GitHub Code Search
+
+GitHub hat eine gute eingebaute Suche. Klicke auf die
+Suchleiste oben (oder drücke `/`) und probiere diese Suchen aus:
+
+1. **Im eigenen Repo suchen:**
+   ```
+   repo:it-erben/bc-dev-training-<dein-username> Caption
+   ```
+   Findet alle Stellen, an denen `Caption` vorkommt.
+
+2. **Nach Dateityp filtern:**
+   ```
+   repo:it-erben/bc-dev-training-<dein-username> language:al field
+   ```
+   Findet nur AL-Dateien mit dem Wort `field`.
+
+3. **In der ganzen Organisation suchen:**
+   ```
+   org:it-erben TrainingItem
+   ```
+   Findet die Datei in allen Repos der Teilnehmer.
+
+4. **Nach Pfad filtern:**
+   ```
+   org:it-erben path:.github/workflows CICD
+   ```
+   Findet Workflow-Dateien in allen Repos.
+
+> **Tipp:** Die vollständige Suchsyntax findest du unter
+> **github.com/search/advanced** oder in der
+> [Dokumentation](https://docs.github.com/en/search-github).
+
+### gh CLI für Fortgeschrittene
+
+Probiere diese Befehle aus, die im Alltag ziemlich praktisch sind:
+
+```bash
+# Alle Workflow-Runs anzeigen
+gh run list
+
+# Den aktuell laufenden Run live beobachten
+gh run watch
+
+# Details eines bestimmten Runs anzeigen
+gh run view <run-id>
+
+# Alle PRs auflisten (auch geschlossene)
+gh pr list --state all
+
+# Einen PR im Browser öffnen
+gh pr view --web
+```
+
+### Blame und History auf der Kommandozeile
+
+```bash
+# Wer hat welche Zeile zuletzt geändert?
+git blame app/TrainingItem.Table.al
+
+# Alle Commits für eine bestimmte Datei
+git log --oneline app/TrainingItem.Table.al
+
+# Änderungen zwischen Branches vergleichen
+git diff main...experiment/break-the-build
+```
+
+> **Tipp:** Die gleiche Vergleichsansicht gibt es auf GitHub als URL:
+> `github.com/<repo>/compare/main...experiment/break-the-build`
 
 ## Phase 3: Fehler-Logs lesen
 
@@ -84,7 +159,7 @@ Pipeline-Logs zu lesen sind.
 > **Tipp:** In den Logs kannst du die Suchfunktion (Ctrl+F / Cmd+F)
 > nutzen und nach `##[error]` suchen, um Fehler schnell zu finden.
 
-10. Du kannst die Logs auch ueber die Kommandozeile pruefen:
+10. Du kannst die Logs auch über die Kommandozeile prüfen:
     ```bash
     gh run list --limit 1
     gh run view <run-id> --log-failed
@@ -92,7 +167,7 @@ Pipeline-Logs zu lesen sind.
 
 ## Phase 4: Fehler beheben
 
-11. Mache den Syntaxfehler rueckgaengig — aendere `taable` zurueck
+11. Mache den Syntaxfehler rückgängig — ändere `taable` zurück
     zu `table`.
 
 12. Committe und pushe den Fix:
@@ -105,37 +180,12 @@ Pipeline-Logs zu lesen sind.
 13. Beobachte die Pipeline erneut. Diesmal sollte der Build
     durchlaufen.
 
-## Phase 5: Aufraeumen
+## Phase 5: Aufräumen
 
-14. Dieser Branch war nur ein Experiment. Wechsle zurueck auf `main`
-    und loesche den Branch:
+14. Dieser Branch war nur ein Experiment. Wechsle zurück auf `main`
+    und lösche den Branch:
     ```bash
     git switch main
     git push origin --delete experiment/break-the-build
     git branch -D experiment/break-the-build
     ```
-
-## Diskussion
-
-- Was passiert, wenn ein Fehler erst nach dem Merge in `main` auffaellt?
-- Warum ist es sinnvoll, die Pipeline **vor** dem Merge laufen zu lassen?
-- Welche anderen Checks koennten in einer Pipeline nuetzlich sein?
-  (Tests, Linting, Security-Scans, ...)
-
-## Zusammenfassung
-
-| Konzept | Beschreibung |
-|---------|-------------|
-| Workflow | Eine YAML-Datei, die definiert, wann und was automatisch laeuft |
-| Trigger | Ereignis, das eine Pipeline ausloest (push, PR, manuell) |
-| Job | Ein Arbeitsschritt innerhalb eines Workflows |
-| Artefakt | Das Ergebnis eines Builds (z.B. die `.app`-Datei) |
-| Logs | Ausfuehrliche Ausgabe jedes Pipeline-Schritts |
-
-| Befehl | Beschreibung |
-|--------|-------------|
-| `gh run list` | Letzte Pipeline-Runs anzeigen |
-| `gh run view <id>` | Details eines Runs anzeigen |
-| `gh run view <id> --log-failed` | Nur die Fehler-Logs anzeigen |
-| `git push origin --delete <branch>` | Remote-Branch loeschen |
-| `git branch -D <branch>` | Lokalen Branch loeschen (auch ungemergt) |

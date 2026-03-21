@@ -5,7 +5,7 @@ IDE-Konfigurationen oder Abhängigkeiten (z.B. `node_modules/`) sollten von der
 Versionskontrolle ausgeschlossen werden. Dafür gibt es die Datei `.gitignore`.
 
 In dieser Übung lernst du, wie du mit `.gitignore` Dateien gezielt von der
-Versionsverfolgung ausschließt – und was passiert, wenn eine bereits getrackte
+Versionsverfolgung ausschließt - und was passiert, wenn eine bereits getrackte
 Datei nachträglich ignoriert werden soll.
 
 ## Aufgaben
@@ -18,7 +18,7 @@ Datei nachträglich ignoriert werden soll.
 2. Führe `git status` aus. Die Datei sollte als *untracked* erscheinen.
 3. Erstelle eine Datei `.gitignore` im Arbeitsverzeichnis mit dem Inhalt `*.s`.
    Damit werden alle Dateien mit der Endung `.s` ignoriert.
-4. Führe `git status` erneut aus. `foo.s` sollte jetzt nicht mehr auftauchen –
+4. Führe `git status` erneut aus. `foo.s` sollte jetzt nicht mehr auftauchen -
    stattdessen wird die neue `.gitignore` als untracked angezeigt.
 5. Committe die `.gitignore`-Datei.
 
@@ -34,7 +34,7 @@ Datei nachträglich ignoriert werden soll.
 
 > **Wichtiger Grundsatz:** `.gitignore` wirkt nur auf 
 > **neue, noch nicht getrackte Dateien**. Dateien, die bereits einmal committet 
-> wurden, werden weiterhin von Git verfolgt – auch wenn ihr Muster 
+> wurden, werden weiterhin von Git verfolgt - auch wenn ihr Muster 
 > nachträglich in `.gitignore` aufgenommen wird.
 
 11. Erstelle eine neue Datei `file2.txt`. Was zeigt `git status`? Diese Datei
@@ -54,7 +54,7 @@ Datei nachträglich ignoriert werden soll.
 ### Ausnahmen definieren
 
 14. Erstelle eine neue Datei `file3.txt` und füge die Zeile `!file3.txt` in
-    `.gitignore` hinzu. Das Ausrufezeichen `!` negiert die Regel – diese Datei
+    `.gitignore` hinzu. Das Ausrufezeichen `!` negiert die Regel - diese Datei
     soll trotz `*.txt` getrackt werden.
 
 > **Hinweis für zsh-Nutzer:** Der Befehl `echo "!file3.txt" >> .gitignore`

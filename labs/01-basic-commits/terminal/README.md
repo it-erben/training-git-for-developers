@@ -28,7 +28,7 @@ touch meinedatei.txt
 ni meinedatei.txt
 ```
 4. Führe `git status` aus. Was hat sich geändert? Die Datei sollte als
-   **untracked** angezeigt werden – Git kennt sie noch nicht.
+   **untracked** angezeigt werden - Git kennt sie noch nicht.
 5. Füge die Datei mit `git add meinedatei.txt` zur Staging Area hinzu.
 6. Führe erneut `git status` aus. Die Datei sollte jetzt unter 
    **Changes to be committed** erscheinen.

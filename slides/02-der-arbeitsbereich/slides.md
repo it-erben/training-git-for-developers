@@ -14,13 +14,11 @@ footer: "CC BY-NC-SA 4.0, Alexander Erben"
 
 ## Lernziele
 
-Nach diesem Modul kannst du:
-
-- **Den Status auslesen** - `git status` vs. `git status -s`
-- **Diffs auswerten** - Änderungen in CLI und VS Code analysieren
-- **Atomare Commits erstellen** - Warum "klein" besser als "groß" ist
-- **Partielles Staging** - Nur Teile einer Datei committen (Hunk Staging)
-- **Die Historie verstehen** - Den Weg einer Codezeile nachverfolgen
+- `git status` und `git status -s` lesen können
+- Diffs auswerten (CLI und VS Code)
+- Atomare Commits: warum "klein" besser ist als "groß"
+- Nur Teile einer Datei committen (Hunk Staging)
+- Den Weg einer Codezeile durch die Historie verfolgen
 
 ---
 

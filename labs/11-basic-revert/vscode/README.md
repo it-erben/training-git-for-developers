@@ -45,5 +45,5 @@ beobachtest, wie sich die Historie und das Arbeitsverzeichnis verändern.
 
 > **Sicherheitshinweis:** Ein Revert entfernt Daten aus dem aktuellen Stand,
 > aber **nicht aus der Git-Historie**. Wenn Passwörter oder API-Keys committet
-> wurden, reicht ein Revert nicht aus – die Secrets müssen sofort rotiert
+> wurden, reicht ein Revert nicht aus - die Secrets müssen sofort rotiert
 > werden.

@@ -88,6 +88,59 @@ Wir fügen der Training-Items-Tabelle ein neues Feld hinzu: eine
 
 11. Warte, bis die Pipeline grün ist.
 
+## Während du wartest: Issues und Project Boards
+
+Du hast gerade deinen ersten PR erstellt. In einem echten Projekt
+würde dieser PR oft auf ein **Issue** verweisen — eine Aufgabe oder
+einen Bug, der damit gelöst wird. Viele Unternehmen setzen dafür Jira
+oder andere Tracker ein. GitHub hat aber auch eine eingebaute Lösung.
+Nutze die Wartezeit, um das auszuprobieren.
+
+### Ein Issue erstellen
+
+1. Gehe in deinem Repository zum Tab **Issues** und klicke
+   **"New issue"**.
+
+2. Erstelle ein Issue:
+   - **Title**: `feat: Fälligkeitsdatum für Training Items`
+   - **Description**: Beschreibe kurz, warum das Feature sinnvoll wäre
+
+3. Auf der rechten Seite kannst du das Issue konfigurieren:
+   - **Labels**: Klicke auf **Labels** und erstelle ein neues Label
+     `enhancement` (falls nicht vorhanden)
+   - **Milestone**: Erstelle einen Milestone `v1.0` und weise das
+     Issue zu
+
+4. Merke dir die Issue-Nummer (z.B. `#2`).
+
+### Issues mit Commits verknüpfen
+
+Git und GitHub haben eine Verbindung: Bestimmte Schlüsselwörter
+in Commit-Messages oder PR-Beschreibungen schließen Issues automatisch.
+
+| Schlüsselwort | Wirkung                      |
+|---------------|------------------------------|
+| `closes #2`   | Schließt Issue #2 beim Merge |
+| `fixes #2`    | Schließt Issue #2 beim Merge |
+| `resolves #2` | Schließt Issue #2 beim Merge |
+| `refs #2`     | Verlinkt nur, schließt nicht |
+
+> **Tipp:** Du kannst das gleich in Lab 4 ausprobieren, wenn du das
+> Issue "Fälligkeitsdatum" dort mit `closes #2` im PR schließt.
+
+### GitHub Projects
+
+1. Gehe zum Tab **Projects** in deinem Repository und klicke
+   **"Link a project"** → **"New project"**.
+
+2. Wähle **Board** als Layout. Du bekommst ein Kanban-Board mit
+   Spalten wie *Todo*, *In Progress*, *Done*.
+
+3. Füge dein Issue dem Board hinzu (über **"+ Add item"** im Board).
+
+4. Ziehe das Issue von *Todo* nach *In Progress* - das ist der
+   Workflow, den Teams nutzen würden.
+
 ## Phase 5: Review und Merge
 
 13. In einem echten Team würde jetzt jemand deinen Code reviewen.

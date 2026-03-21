@@ -55,7 +55,7 @@ machen.
 ![](images/step_26.jpeg)
 
 10. Wähle "Revert --no-edit". Git erstellt einen neuen Commit, der die
-    Änderungen von Commit 9 rückgängig macht – die Historie bleibt aber
+    Änderungen von Commit 9 rückgängig macht - die Historie bleibt aber
     erhalten.
 
 ![](images/step_27.jpeg)

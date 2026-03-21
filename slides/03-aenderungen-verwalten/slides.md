@@ -14,12 +14,12 @@ footer: "CC BY-NC-SA 4.0, Alexander Erben"
 
 ## Lernziele
 
-- **Den letzten Commit korrigieren** - `git commit --amend` nutzen
-- **Die drei Stufen von Reset verstehen** - Soft, Mixed und Hard einsetzen
-- **Gepushte Fehler rückgängig machen** mit `git revert`
-- **Stashen** - Arbeit vorübergehend parken
-- **Cherry-Picking anwenden** - Einzelne Commits in andere Branches übernehmen
-- **Rebase verstehen** - History linearisieren und aufräumen
+- Den letzten Commit korrigieren mit `git commit --amend`
+- Die drei Stufen von Reset: Soft, Mixed, Hard
+- Gepushte Fehler rückgängig machen mit `git revert`
+- Arbeit zwischenspeichern mit `git stash`
+- Cherry-Picking: einzelne Commits in andere Branches holen
+- Rebase: History linearisieren und aufräumen
 
 ---
 

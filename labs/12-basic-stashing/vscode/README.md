@@ -22,7 +22,7 @@ verlieren. Dafür gibt es Stash.
 
 ![](images/step_07.jpeg)
 
-3. Das Arbeitsverzeichnis ist jetzt sauber – alle Änderungen sind im Stash
+3. Das Arbeitsverzeichnis ist jetzt sauber - alle Änderungen sind im Stash
    gespeichert.
 
 ![](images/step_08.jpeg)
@@ -40,7 +40,7 @@ verlieren. Dafür gibt es Stash.
 
 ![](images/step_19.jpeg)
 
-> **Hinweis:** Alle Änderungen kommen als **unstaged** zurück – auch die, die
+> **Hinweis:** Alle Änderungen kommen als **unstaged** zurück - auch die, die
 > vorher in der Staging Area waren.
 
 ## Aufräumen

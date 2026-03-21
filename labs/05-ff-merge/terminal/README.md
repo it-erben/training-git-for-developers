@@ -38,11 +38,11 @@ Branches in den aktuell ausgecheckten Branch. Du musst also zuerst auf den
 Ziel-Branch wechseln.
 
 8. Wechsle auf den `master`-Branch.
-9. Überprüfe den Inhalt von `greeting.txt` – hier steht noch die alte Version.
+9. Überprüfe den Inhalt von `greeting.txt` - hier steht noch die alte Version.
 10. Vergleiche die Branches: `git diff master feature/uppercase`
 11. Führe den Merge aus: `git merge feature/uppercase`. Git sollte einen 
     **Fast-Forward** melden.
-12. Überprüfe erneut den Inhalt von `greeting.txt` – die Großbuchstaben sollten
+12. Überprüfe erneut den Inhalt von `greeting.txt` - die Großbuchstaben sollten
     jetzt auch auf `master` angekommen sein.
 
 ### Aufräumen

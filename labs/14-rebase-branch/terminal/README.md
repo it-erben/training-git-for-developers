@@ -1,4 +1,4 @@
-# Übung 14: Rebase – Lineare Historie durch Umbasieren
+# Übung 14: Rebase - Lineare Historie durch Umbasieren
 
 Beim Mergen entsteht ein Merge-Commit, der die Zusammenführung dokumentiert. Das
 ist oft gewünscht, kann bei vielen kleinen Branches aber zu einer
@@ -17,7 +17,7 @@ A - B - E    master          A - B - E           master
 ```
 
 Beim Rebase werden die Commits `C` und `D` **neu erstellt** (als `C'` und
-`D'`) – sie bekommen neue Hashes, weil sie jetzt auf `E` statt auf `B` aufbauen.
+`D'`) - sie bekommen neue Hashes, weil sie jetzt auf `E` statt auf `B` aufbauen.
 
 > **Wichtig:** Wie bei `git reset` gilt: Rebase verändert die Historie. Verwende
 > es nur für lokale Commits, die noch nicht gepusht wurden.

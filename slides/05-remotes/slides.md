@@ -14,18 +14,16 @@ footer: "CC BY-NC-SA 4.0, Alexander Erben"
 
 ## Lernziele
 
-Nach diesem Modul kannst du:
-
-- **Remote-Repositories verstehen**: Was `origin` ist und wie Remotes funktionieren
-- **Push, Fetch und Pull unterscheiden**: Daten senden vs. holen
-- **Tracking-Branches verstehen**: Was `origin/main` ist und warum es wichtig ist
-- **Typische Remote-Workflows anwenden**: Zusammenarbeit über ein zentrales Repository
+- Was `origin` ist und wie Remotes funktionieren
+- Push, Fetch und Pull unterscheiden
+- Was `origin/main` ist (Tracking-Branches)
+- Zusammenarbeit über ein zentrales Repository
 
 ---
 
 ## Was ist ein Remote?
 
-Ein Remote ist ein **Verweis auf ein anderes Repository** — meistens auf einem Server.
+Ein Remote ist ein **Verweis auf ein anderes Repository** - meistens auf einem Server.
 
 ```bash
 # Konfigurierte Remotes anzeigen
@@ -38,7 +36,7 @@ origin  https://github.com/team/project.git (push)
 ```
 
 - `origin` ist der **Standardname** für das Repository, von dem geklont wurde.
-- Ein Remote ist nur eine URL mit einem Namen — nichts Magisches.
+- Ein Remote ist nur eine URL mit einem Namen - nichts Magisches.
 
 ---
 
@@ -62,7 +60,7 @@ git remote remove upstream
 git remote set-url origin https://github.com/team/new-url.git
 ```
 
-> In der Praxis brauchst du `remote add` selten — `git clone` richtet `origin` automatisch ein.
+> In der Praxis brauchst du `remote add` selten - `git clone` richtet `origin` automatisch ein.
 
 ---
 
@@ -143,7 +141,7 @@ git pull --rebase
 | Kann Konflikte erzeugen | Nein | Ja |
 | Sicher zum "Schauen" | Ja | Nein |
 
-> **Empfehlung:** Im Zweifel erst `git fetch`, dann mit `git log origin/main` schauen, was kommt — und dann bewusst mergen oder rebasen.
+> **Empfehlung:** Im Zweifel erst `git fetch`, dann mit `git log origin/main` schauen, was kommt - und dann bewusst mergen oder rebasen.
 
 ---
 

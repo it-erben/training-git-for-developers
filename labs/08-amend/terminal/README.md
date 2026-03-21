@@ -5,13 +5,13 @@ eine Datei vergessen hast, ein Tippfehler in der Commit-Nachricht steckt, oder
 eine kleine Änderung noch dazugehört hätte. Für genau diese Fälle gibt es
 `git commit --amend`.
 
-Mit `--amend` kannst du den **letzten Commit** nachträglich verändern – sowohl
+Mit `--amend` kannst du den **letzten Commit** nachträglich verändern - sowohl
 den Inhalt (welche Dateien enthalten sind) als auch die Commit-Nachricht. Dabei
 wird kein neuer Commit hinzugefügt, sondern der letzte Commit wird durch eine
 korrigierte Version ersetzt.
 
 > **Wichtig:** Verwende `--amend` nur bei Commits, die noch nicht gepusht
-> wurden. Da der Commit ersetzt wird, ändert sich sein Hash – und das kann
+> wurden. Da der Commit ersetzt wird, ändert sich sein Hash - und das kann
 > Probleme verursachen, wenn andere bereits mit dem alten Commit arbeiten.
 
 ## Aufgaben
@@ -32,12 +32,12 @@ korrigierte Version ersetzt.
 4. Führe `git commit --amend` aus. Git öffnet den Editor mit der bisherigen
    Commit-Nachricht. Du kannst sie anpassen oder einfach so übernehmen.
 5. Was ist passiert? Führe `git log -p` aus und beobachte: Der Commit enthält
-   jetzt **beide** Dateien. Es wurde kein neuer Commit erstellt – der alte wurde
+   jetzt **beide** Dateien. Es wurde kein neuer Commit erstellt - der alte wurde
    ersetzt.
 
 ### Die Commit-Nachricht ändern
 
-6. Führe `git commit --amend` noch einmal aus – diesmal ohne vorher etwas zu
+6. Führe `git commit --amend` noch einmal aus - diesmal ohne vorher etwas zu
    stagen. Der Editor öffnet sich, und du kannst ausschließlich die
    Commit-Nachricht ändern. Probiere es aus.
 

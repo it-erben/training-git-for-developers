@@ -14,12 +14,10 @@ footer: "CC BY-NC-SA 4.0, Alexander Erben"
 
 ## Lernziele
 
-Nach diesem Modul kannst du:
-
-- **Das Zeiger-Modell verstehen**: Warum Branches in Git so leichtgewichtig sind
-- **Merge-Strategien kennen**: Fast-Forward vs. Merge-Commits
-- **Konflikte lösen**: Der VS Code Merge Editor
-- **"Pull before Merge"** und Branch-Hygiene
+- Warum Branches in Git so leichtgewichtig sind (Zeiger-Modell)
+- Fast-Forward vs. Merge-Commits
+- Konflikte lösen mit dem VS Code Merge Editor
+- "Pull before Merge" und Branch-Hygiene
 
 ---
 
@@ -57,7 +55,7 @@ Mehrere Branches können auf denselben Commit zeigen, z.B. direkt nach
 
 ## Merge-Varianten
 
-Beim Zusammenführen von Arbeit gibt es zwei Szenarien:
+Beim Mergen gibt es zwei Varianten:
 
 ### A) Fast-Forward (Der "einfache" Weg)
 
@@ -87,9 +85,9 @@ Git muss die Änderungen beider Seiten zusammenführen.
 
 Git vergleicht drei Snapshots miteinander:
 
-- **Gemeinsamer Vorfahre** — Wo haben sich die Branches getrennt?
-- **Snapshot A** — Stand auf dem Ziel-Branch (`master`)
-- **Snapshot B** — Stand auf dem Branch, der gemergt wird (`testing`)
+- **Gemeinsamer Vorfahre** - Wo haben sich die Branches getrennt?
+- **Snapshot A** - Stand auf dem Ziel-Branch (`master`)
+- **Snapshot B** - Stand auf dem Branch, der gemergt wird (`testing`)
 
 ---
 
@@ -100,7 +98,7 @@ Git vergleicht drei Snapshots miteinander:
 ## Ergebnis: Der Merge-Commit
 
 Das Ergebnis ist ein neuer **Merge-Commit** (C6), der auf **beide Eltern**
-zeigt — den letzten Commit von `master` und den letzten von `testing`.
+zeigt - den letzten Commit von `master` und den letzten von `testing`.
 
 ![w:900](images/three-way-merge-result.drawio.svg)
 

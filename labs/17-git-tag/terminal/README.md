@@ -1,14 +1,14 @@
-# Übung 17: Tags – Commits markieren
+# Übung 17: Tags - Commits markieren
 
 Tags sind benannte Markierungen, die auf einen bestimmten Commit zeigen. Anders
-als Branches bewegen sich Tags nicht weiter – sie bleiben immer auf dem gleichen
+als Branches bewegen sich Tags nicht weiter - sie bleiben immer auf dem gleichen
 Commit stehen. Damit eignen sie sich perfekt, um Release-Versionen oder andere
 wichtige Meilensteine zu kennzeichnen.
 
 Es gibt zwei Arten von Tags:
 
 - **Lightweight Tags** (leichtgewichtig): Nur ein Name, der auf einen Commit
-  zeigt – wie ein Branch, der sich nicht bewegt.
+  zeigt - wie ein Branch, der sich nicht bewegt.
 - **Annotated Tags** (annotiert): Enthalten zusätzlich den Namen des Erstellers,
   das Datum und eine Nachricht. Sie werden als eigenständige Git-Objekte
   gespeichert und sind die empfohlene Variante für Releases.

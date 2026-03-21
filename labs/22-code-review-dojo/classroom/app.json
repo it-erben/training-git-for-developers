@@ -1,0 +1,8 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "name": "BC Review Demo",
+  "publisher": "Schulung",
+  "version": "1.0.0.0",
+  "runtime": "14.0",
+  "target": "Cloud"
+}

@@ -8,7 +8,7 @@ rückgängig machst und gelöschte Dateien wiederherstellst.
 ## Ausgangszustand
 
 1. Im Explorer siehst du nur `bar.txt` (M = modified). Die Datei `foo.txt`
-   fehlt – sie wurde gelöscht. Wechsle in die Repository-Ansicht.
+   fehlt - sie wurde gelöscht. Wechsle in die Repository-Ansicht.
 
 ![](images/step_01.jpeg)
 

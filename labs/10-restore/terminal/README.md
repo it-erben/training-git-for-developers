@@ -55,7 +55,7 @@ eingeführt und ersetzt den früheren (und verwirrend überladenen) `git checkou
     jetzt vom aktuellen Commit abweicht. Du könntest diese Änderung jetzt stagen
     und committen, wenn du den alten Stand dauerhaft wiederherstellen möchtest.
 
-> `git restore` ist ein risikoloses Werkzeug – es verändert keine
+> `git restore` ist ein risikoloses Werkzeug - es verändert keine
 > Commits und keine Historie. Es arbeitet ausschließlich auf dem Working
 > Directory und der Staging Area.
 

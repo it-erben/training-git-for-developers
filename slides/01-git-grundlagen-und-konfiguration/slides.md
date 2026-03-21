@@ -208,7 +208,7 @@ ssh -T git@github.com
 
 ---
 
-## Nützliche Aliase für die Produktivität
+## Nützliche Aliase
 
 Aliase sparen Tipparbeit und machen die CLI mächtiger:
 
