@@ -54,23 +54,23 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 
 ### Änderungen aus der Staging Area entfernen
 
-13. Entferne die Änderung aus der Staging Area mit
+12. Entferne die Änderung aus der Staging Area mit
     `git restore --staged file.txt`. Die Datei im Working Directory bleibt
     unverändert - nur die Staging Area wird zurückgesetzt.
-14. Was zeigt `git status` jetzt? Die Änderung sollte nur noch als unstaged
+13. Was zeigt `git status` jetzt? Die Änderung sollte nur noch als unstaged
     angezeigt werden.
-15. Stage die Änderung erneut und erstelle einen Commit.
-16. Wie sieht das Log jetzt aus?
+14. Stage die Änderung erneut und erstelle einen Commit.
+15. Wie sieht das Log jetzt aus?
 
 ### Änderungen im Working Directory verwerfen
 
-17. Überschreibe den Inhalt nochmals: `echo "v4" > file.txt`
-18. Überprüfe den Inhalt der Datei.
-19. Was sagt `git status`?
-20. Führe `git restore file.txt` aus. Damit wird die Datei im Working Directory
+16. Überschreibe den Inhalt nochmals: `echo "v4" > file.txt`
+17. Überprüfe den Inhalt der Datei.
+18. Was sagt `git status`?
+19. Führe `git restore file.txt` aus. Damit wird die Datei im Working Directory
     auf den Stand des letzten Commits zurückgesetzt.
-21. Was steht jetzt in `file.txt`?
-22. Was sagt `git status`? Das Arbeitsverzeichnis sollte wieder sauber sein.
+20. Was steht jetzt in `file.txt`?
+21. Was sagt `git status`? Das Arbeitsverzeichnis sollte wieder sauber sein.
 
 > **Merke:** `git restore --staged` entfernt Änderungen aus der Staging Area
 > (zurück ins Working Directory). `git restore` **ohne** `--staged` verwirft Änderungen

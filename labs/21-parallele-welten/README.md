@@ -88,15 +88,33 @@ bekommen?
 
 Probiere **beide Optionen** aus:
 
-1. Erstelle eine Kopie des Branches:
+1. Merke dir den aktuellen Stand von `master`, damit du den Vergleich machen
+   kannst:
+
+   ```bash
+   git branch master-before-analytics
+   ```
+
+2. Erstelle eine Kopie des Branches:
 
    ```bash
    git branch feature/analytics-rebase feature/analytics
    ```
 
-2. Merge die eine Kopie direkt.
-3. Rebase die andere Kopie auf `master` und merge dann.
-4. Vergleiche die Graphen.
+3. Merge `feature/analytics` direkt in `master`.
+4. Vergleiche den Graphen: `git log --oneline --graph --all`
+5. Setze `master` zurück, um die zweite Variante zu testen:
+
+   ```bash
+   git reset --hard master-before-analytics
+   ```
+
+6. Rebase `feature/analytics-rebase` auf `master` und merge dann.
+7. Vergleiche die Graphen. Lösche danach den Hilfs-Branch:
+
+   ```bash
+   git branch -d master-before-analytics
+   ```
 
 ## Phase 4: Fehlerhafte Commits rückgängig machen
 

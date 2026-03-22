@@ -159,7 +159,10 @@ werden — auf der Live-Version.
    ```
 
 6. Löse eventuelle Konflikte (die Versionen unterscheiden sich — behalte
-   jeweils die Version des Zielbranches, aber übernimm den Fix).
+   jeweils die Version des Zielbranches, aber übernimm den Fix). Prüfe
+   nach jedem Cherry-Pick die Version in `app.json` — auch wenn kein
+   Konflikt auftritt, könnte die Version ungewollt überschrieben worden
+   sein.
 
 ## Phase 6: Release abschließen
 
@@ -176,8 +179,14 @@ werden — auf der Live-Version.
 
    ```bash
    git branch -d release/1.1.0
-   git branch -d hotfix/v1.0.1
+   git branch -D hotfix/v1.0.1
    ```
+
+   > **Warum `-D` statt `-d`?** Der Hotfix-Branch wurde per Cherry-Pick in
+   > `main` und `release/1.1.0` übernommen, aber nie direkt gemergt. Git
+   > erkennt Cherry-Picks nicht als Merge und betrachtet den Branch daher
+   > als "nicht vollständig gemergt". Mit `-D` (Großbuchstabe) erzwingst
+   > du das Löschen.
 
 6. Prüfe das Endergebnis:
 

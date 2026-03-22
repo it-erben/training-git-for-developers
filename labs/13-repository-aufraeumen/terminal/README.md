@@ -56,7 +56,9 @@ die in separate Commits gehören.
 Hinweise:
 
 - `git reset --soft HEAD~<n>` setzt Commits zurück, behält aber alle Änderungen
-  im Staging. Finde heraus, wie weit du zurückgehen musst.
+  im Staging. Finde heraus, wie weit du zurückgehen musst. **Achtung:** Wenn du
+  in Phase 2 bereits Commits erstellt hast, setze nur bis zum Monster-Commit
+  zurück — nicht weiter, sonst werden auch deine Phase-2-Commits aufgelöst.
 - Mit `git reset HEAD <datei>` kannst du einzelne Dateien aus dem Staging
   entfernen.
 - Mit `git add -p` kannst du Teile einer Datei stagen.

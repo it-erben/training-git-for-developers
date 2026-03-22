@@ -51,8 +51,8 @@ der Reset unterschiedlich auf die drei Bereiche von Git aus:
 
 ### Reset --hard: Alles zurücksetzen
 
-7. Führe `git reset --hard HEAD~1` aus.
-8. Überprüfe:
+9. Führe `git reset --hard HEAD~1` aus.
+10. Überprüfe:
     - **Working Directory:** Eine Datei ist verschwunden!
     - **`git log --oneline`:** Der Commit ist weg.
     - **`git status`:** Alles sauber - die Änderungen sind unwiderruflich
@@ -60,9 +60,9 @@ der Reset unterschiedlich auf die drei Bereiche von Git aus:
 
 ### Vergleich: git revert
 
-9. Führe `git revert HEAD~1` aus. Git erstellt einen neuen Commit, der die
-   Änderungen des angegebenen Commits rückgängig macht.
-10. Überprüfe Working Directory, Log und Status. Was ist der Unterschied zu
+11. Führe `git revert HEAD~1` aus. Git erstellt einen neuen Commit, der die
+    Änderungen des angegebenen Commits rückgängig macht.
+12. Überprüfe Working Directory, Log und Status. Was ist der Unterschied zu
     `git reset`?
 
 > **Zusammenfassung:**

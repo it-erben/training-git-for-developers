@@ -24,6 +24,9 @@ if (($fileCount + 10) -gt 32) {
 
 Set-Content "test.sh" $testScriptBash
 Set-Content "test.ps1" $testScriptPs1
+if (Get-Command chmod -ErrorAction SilentlyContinue) {
+    chmod +x "test.sh"
+}
 git add "test.sh" "test.ps1"
 git commit -m "Add tests"
 git tag initial-commit
