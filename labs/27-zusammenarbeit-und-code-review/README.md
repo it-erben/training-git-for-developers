@@ -11,6 +11,7 @@ Notiere dir den Repository-Namen deines Partners:
 `it-erben/bc-dev-training-<partner-username>`
 
 Stelle sicher, dass du auf `main` bist:
+
 ```bash
 git switch main
 git pull
@@ -19,6 +20,7 @@ git pull
 ## Phase 1: Feature entwickeln
 
 1. Erstelle einen Feature-Branch:
+
    ```bash
    git switch -c feature/completed-date
    ```
@@ -43,6 +45,7 @@ git pull
    ```
 
 4. Committe und pushe:
+
    ```bash
    git add app/TrainingItem.Table.al app/TrainingItems.Page.al
    git commit -m "feat: add completed date field"
@@ -94,6 +97,7 @@ hinzugefügt wird, wenn bestimmte Dateien geändert werden.
    bereits im Root-Verzeichnis).
 
 2. Die Syntax ist einfach:
+
    ```
    # Alles im app-Ordner gehört dir
    /app/ @dein-github-username
@@ -154,6 +158,7 @@ Jetzt wechselst du die Rolle: Du reviewst den PR deines Partners.
     direkt auf GitHub übernehmen:
     - Klicke **"Commit suggestion"**
     - Oder arbeite die Änderung lokal ein:
+
       ```bash
       # Änderung lokal machen
       git add app/TrainingItem.Table.al
@@ -171,6 +176,7 @@ Jetzt wechselst du die Rolle: Du reviewst den PR deines Partners.
     - Beobachte die Deploy-Pipeline unter **Actions**
 
 15. Räume lokal auf:
+
     ```bash
     git switch main
     git pull

@@ -18,9 +18,11 @@ Historie und das Arbeitsverzeichnis dabei verändern.
 1. Schau dir die Historie an: `git log --oneline`
 2. Lies den Inhalt von `greeting.txt`
 3. Reverte den neuesten Commit:
+
    ```bash
    git revert HEAD
    ```
+
    Git öffnet einen Editor für die Commit-Nachricht des Revert-Commits.
    Bestätige die vorgeschlagene Nachricht.
 4. Schau dir die Historie erneut an: `git log --oneline`. Ein Revert fügt immer
@@ -34,9 +36,11 @@ Historie und das Arbeitsverzeichnis dabei verändern.
 7. Suche in der Historie (`git log --oneline`) den Commit, der Zugangsdaten (
    credentials) zum Repository hinzugefügt hat. Notiere dir den SHA-Hash.
 8. Reverte genau diesen Commit:
+
    ```bash
    git revert <sha>
    ```
+
 9. Prüfe die Historie: `git log --oneline`
 10. Schau dir das Arbeitsverzeichnis an: `ls`. Die Credentials-Datei sollte
     verschwunden sein.

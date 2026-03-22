@@ -61,10 +61,10 @@ git status -s
 
 **Die Kürzel verstehen:**
 
-- ` M` (Leerstelle vor M): Datei geändert, aber **unstaged**
-- `M ` (M vor Leerstelle): Datei geändert und **staged**
+- `M` (Leerstelle vor M): Datei geändert, aber **unstaged**
+- `M` (M vor Leerstelle): Datei geändert und **staged**
 - `??`: Datei ist **untracked** (Git kennt sie noch nicht)
-- `A `: Datei ist **neu hinzugefügt** (staged)
+- `A`: Datei ist **neu hinzugefügt** (staged)
 
 ---
 

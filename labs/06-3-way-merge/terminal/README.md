@@ -61,4 +61,3 @@ auseinanderlaufen:
 | `git diff <branch1> <branch2>`    | Unterschiede anzeigen               |
 | `git log --oneline --graph --all` | Historie mit Graph anzeigen         |
 | `git branch -d <name>`            | Branch nach dem Merge löschen       |
-

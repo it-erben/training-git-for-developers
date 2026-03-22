@@ -7,6 +7,7 @@ baut und in eine BC-Sandbox deployt.
 ## Vorbereitung
 
 Dein Trainer gibt dir:
+
 - Einen **Classroom Invite-Link**
 - Deine **Teilnehmernummer** (1-10)
 
@@ -20,16 +21,19 @@ Dein Trainer gibt dir:
    mit einem Link zu deinem neuen Repo.
 
 3. Klone das Repository auf deinen Rechner:
+
    ```bash
    git clone https://github.com/it-erben/bc-dev-training-<dein-username>.git
    cd bc-dev-training-<dein-username>
    ```
 
 4. Schau dir die Projektstruktur an:
+
    ```bash
    ls -la
    ls app/
    ```
+
    Du siehst eine AL-Extension mit einer einfachen Tabelle und einer
    Listenseite.
 
@@ -38,10 +42,13 @@ Dein Trainer gibt dir:
 5. Führe das Setup-Script mit deiner Teilnehmernummer aus:
 
    **Bash (macOS/Linux):**
+
    ```bash
    ./setup.sh <nummer> "Dein Name"
    ```
+
    **PowerShell (Windows):**
+
    ```powershell
    bash ./setup.sh <nummer> "Dein Name"
    ```
@@ -50,9 +57,11 @@ Dein Trainer gibt dir:
    die Teilnehmer nicht gegenseitig in die Quere kommen.
 
 6. Prüfe, was sich geändert hat:
+
    ```bash
    git diff
    ```
+
    Du siehst Änderungen in `app/app.json`, den `.al`-Dateien und
    `.AL-Go/settings.json`.
 
@@ -62,16 +71,19 @@ Dein Trainer gibt dir:
 ## Phase 3: Commit und Push
 
 7. Füge alle Änderungen zur Staging Area hinzu:
+
    ```bash
    git add -A
    ```
 
 8. Erstelle einen Commit:
+
    ```bash
    git commit -m "chore: App personalisieren"
    ```
 
 9. Pushe den Commit zum Remote:
+
    ```bash
    git push
    ```
@@ -149,6 +161,7 @@ gh run watch
 ## Phase 5: Ergebnis prüfen
 
 13. Öffne mit dem Trainer die BC-Sandbox im Browser:
+
     ```
     https://businesscentral.dynamics.com
     ```
@@ -158,6 +171,7 @@ gh run watch
 15. Du siehst deine leere Liste. Lege testweise ein paar Einträge an.
 
 Herzlichen Glückwunsch! Du hast gerade:
+
 - Ein Git-Repository aus einem Template erstellt
 - Eine Änderung committet und gepusht
 - Eine automatische CI/CD-Pipeline ausgelöst

@@ -6,7 +6,7 @@ plötzlich wird ein dringender Bug in der Produktion gemeldet. Du musst sofort
 auf einen anderen Branch wechseln, aber deine halbfertigen Änderungen willst du
 weder committen noch verlieren.
 
-Genau dafür gibt es `git stash`. Der Befehl nimmt deine aktuellen Änderungen 
+Genau dafür gibt es `git stash`. Der Befehl nimmt deine aktuellen Änderungen
 (sowohl gestagte als auch nicht gestagte) und legt sie auf einen internen
 Stapel (Stack). Dein Arbeitsverzeichnis ist danach wieder sauber, und du kannst
 den Bugfix bearbeiten. Anschließend holst du deine Änderungen mit
@@ -45,7 +45,7 @@ den Bugfix bearbeiten. Anschließend holst du deine Änderungen mit
     - Welche Änderungen sind gestagt?
 
    Du wirst feststellen, dass **alle Änderungen als unstagestaged**
-   zurückkommen - auch die, die vorher in der Staging Area waren. 
+   zurückkommen - auch die, die vorher in der Staging Area waren.
    Das kann überraschend und unerwünscht sein.
 
 ### Arbeit mit Staging-Zustand wiederherstellen
@@ -54,9 +54,11 @@ den Bugfix bearbeiten. Anschließend holst du deine Änderungen mit
    sicher, weil die Änderungen noch im Stash liegen.
 
 6. Stelle die Arbeit diesmal mit der Option `--index` wieder her:
+
    ```bash
    git stash apply --index
    ```
+
    Prüfe erneut Working Directory und Staging Area. Diesmal sollte der
    ursprüngliche Zustand korrekt wiederhergestellt sein - gestagete Änderungen
    sind wieder gestagt, nicht gestagte sind im Working Directory.

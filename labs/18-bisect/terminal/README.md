@@ -24,17 +24,20 @@ Commits also nur etwa 10 Tests statt 1000.
 ### Manuelles Bisect
 
 1. Starte den Bisect-Vorgang:
+
    ```bash
    git bisect start
    ```
 
 2. Der aktuelle Stand (`HEAD`) ist fehlerhaft. Markiere ihn als schlecht:
+
    ```bash
    git bisect bad
    ```
 
 3. Glücklicherweise gibt es den Tag `initial-commit`, der den Projekstart
    markiert und garantiert funktioniert hat. Markiere ihn als gut:
+
    ```bash
    git bisect good initial-commit
    ```
@@ -43,13 +46,17 @@ Commits also nur etwa 10 Tests statt 1000.
    Fehler hier vorhanden ist, indem du das Testskript ausführst:
 
    **Bash/macOS/Linux:**
+
    ```bash
    ./test.sh
    ```
+
    **PowerShell/Windows:**
+
    ```powershell
    pwsh -File test.ps1
    ```
+
    Markiere das Ergebnis mit `git bisect good` oder `git bisect bad` und
    wiederhole, bis Git den fehlerhaften Commit gefunden hat.
 
@@ -59,6 +66,7 @@ Du kannst den gesamten Vorgang auch automatisieren, wenn du ein Testskript hast,
 das mit Exit-Code 0 (Erfolg) oder einem Fehler-Code endet:
 
 **Bash/macOS/Linux:**
+
 ```bash
 git bisect start
 git bisect bad
@@ -67,6 +75,7 @@ git bisect run ./test.sh
 ```
 
 **PowerShell/Windows:**
+
 ```powershell
 git bisect start
 git bisect bad
@@ -80,9 +89,11 @@ Commit aus, der den Fehler eingeführt hat.
 ### Aufräumen
 
 5. Beende den Bisect-Vorgang:
+
    ```bash
    git bisect reset
    ```
+
    Damit kehrst du zum ursprünglichen Branch zurück.
 
 > **Tipp:** `git bisect` ist eines der mächtigsten Debugging-Werkzeuge in Git

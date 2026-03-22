@@ -39,9 +39,11 @@ Beim Rebase werden die Commits `C` und `D` **neu erstellt** (als `C'` und
 ### Rebase durchführen
 
 5. Rebase deinen `uppercase`-Branch auf `master`:
+
    ```bash
    git rebase master
    ```
+
 6. Was ist passiert? Schau dir die Historie an:
    `git log --oneline --graph --all`. Die Commits von `uppercase` wurden auf die
    Spitze von `master` aufgesetzt. Es gibt keine Verzweigung mehr.
@@ -50,9 +52,11 @@ Beim Rebase werden die Commits `C` und `D` **neu erstellt** (als `C'` und
 
 7. Wechsle auf `master`.
 8. Merge `uppercase` in `master`:
+
    ```bash
    git merge uppercase
    ```
+
 9. Wie sieht die Historie jetzt aus? Da `master` direkt hinter `uppercase` lag,
    hat Git einen **Fast-Forward-Merge** durchgeführt. Das Ergebnis ist eine
    perfekt lineare Historie ohne Merge-Commit.

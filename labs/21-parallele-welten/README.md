@@ -89,9 +89,11 @@ bekommen?
 Probiere **beide Optionen** aus:
 
 1. Erstelle eine Kopie des Branches:
+
    ```bash
    git branch feature/analytics-rebase feature/analytics
    ```
+
 2. Merge die eine Kopie direkt.
 3. Rebase die andere Kopie auf `master` und merge dann.
 4. Vergleiche die Graphen.
@@ -117,6 +119,7 @@ enthält.
 1. Lösche alle gemergten Feature-Branches.
 2. Erkläre den Unterschied zwischen `git branch -d` und `git branch -D`.
 3. Prüfe den finalen Graphen:
+
    ```bash
    git log --oneline --graph --all
    ```

@@ -33,9 +33,11 @@ eingeführt und ersetzt den früheren (und verwirrend überladenen) `git checkou
 
 4. Die Datei `bar.txt` hat gestagte Änderungen. Entferne sie aus der Staging
    Area mit:
+
    ```bash
    git restore --staged bar.txt
    ```
+
 5. Führe `git status` aus. Was hat sich geändert? Die Änderung ist jetzt nur
    noch im Working Directory, nicht mehr gestaged.
 6. Stelle auch `bar.txt` mit `git restore bar.txt` wieder her, um die Änderung
@@ -46,9 +48,11 @@ eingeführt und ersetzt den früheren (und verwirrend überladenen) `git checkou
 
 8. Führe `git log --oneline` aus. Fällt dir ein Tag auf?
 9. Stelle den Inhalt von `foo.txt` auf den Stand des Tags `v1.0.0` zurück:
+
    ```bash
    git restore -s v1.0.0 foo.txt
    ```
+
    Damit wird die Datei im Working Directory auf den Stand dieses Tags gesetzt,
    ohne den Branch oder die Historie zu verändern.
 10. Führe `git status` aus. Die Datei erscheint als modifiziert, weil ihr Inhalt

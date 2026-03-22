@@ -10,7 +10,7 @@ behalten.
 
 ### Eine neue Datei anlegen und committen
 
-Öffne Visual Studio Code in dem Exercise-Verzeichnis für 
+Öffne das Terminal in dem Exercise-Verzeichnis für
 Lab 01 (`labs/01-basic-commits/exercise`).
 
 Lege deine erste Datei an und füge sie dem Repository hinzu. In Git
@@ -20,17 +20,21 @@ Repository gespeichert.
 
 3. Erstelle eine neue Datei.
 **Unter macOS und Linux**
+
 ```bash
 touch meinedatei.txt
 ```
+
 **Unter Windows in Powershell**
+
 ```powershell
 ni meinedatei.txt
 ```
+
 4. Führe `git status` aus. Was hat sich geändert? Die Datei sollte als
    **untracked** angezeigt werden - Git kennt sie noch nicht.
 5. Füge die Datei mit `git add meinedatei.txt` zur Staging Area hinzu.
-6. Führe erneut `git status` aus. Die Datei sollte jetzt unter 
+6. Führe erneut `git status` aus. Die Datei sollte jetzt unter
    **Changes to be committed** erscheinen.
 7. Committe die Datei mit `git commit -m "Erste Datei hinzufügen"`.
 8. Prüfe mit `git status`, dass das Arbeitsverzeichnis jetzt wieder sauber ist.
@@ -41,9 +45,11 @@ Nun änderst du eine bereits versionierte Datei und beobachtest, wie Git damit
 umgeht.
 
 9. Ändere den Inhalt deiner Datei:
+
 ```bash
 echo "Hallo Welt" > meinedatei.txt
 ```
+
 10. Was zeigt `git status` jetzt an? Die Datei sollte als **modified**
     erscheinen.
 11. Füge die Änderung mit `git add` zur Staging Area hinzu.

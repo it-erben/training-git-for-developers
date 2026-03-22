@@ -18,9 +18,11 @@ dieser Übung lernst du, wie du sie erkennst, löst und den Merge abschließt.
 1. Du befindest dich auf dem `master`-Branch. Es gibt einen weiteren Branch
    namens `merge-conflict-branch1`, der Änderungen an der gleichen Datei
    enthält. Führe den Merge aus:
+
    ```bash
    git merge merge-conflict-branch1
    ```
+
    Git wird melden, dass es einen Konflikt gibt und der automatische Merge
    fehlgeschlagen ist.
 
@@ -31,6 +33,7 @@ dieser Übung lernst du, wie du sie erkennst, löst und den Merge abschließt.
 
 3. Öffne die betroffene Datei in deinem Editor. Du wirst sogenannte *
    *Konfliktmarker** sehen:
+
    ```
    <<<<<<< HEAD
    Inhalt aus dem aktuellen Branch (master)
@@ -38,6 +41,7 @@ dieser Übung lernst du, wie du sie erkennst, löst und den Merge abschließt.
    Inhalt aus dem gemergten Branch (merge-conflict-branch1)
    >>>>>>> merge-conflict-branch1
    ```
+
    Der Bereich zwischen `<<<<<<< HEAD` und `=======` enthält deine Version, der
    Bereich zwischen `=======` und `>>>>>>>` enthält die Version aus dem anderen
    Branch.
@@ -50,10 +54,12 @@ dieser Übung lernst du, wie du sie erkennst, löst und den Merge abschließt.
    schreiben.
 
 5. Folge den Anweisungen von `git status`, um den Merge abzuschließen:
+
    ```bash
    git add <datei>
    git commit
    ```
+
    Git erstellt dann den Merge-Commit.
 
 ### Ergebnis prüfen

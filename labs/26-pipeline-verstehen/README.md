@@ -17,9 +17,11 @@ git pull
 ## Phase 1: Workflow-Dateien erkunden
 
 1. Schau dir die Workflow-Dateien an:
+
    ```bash
    ls .github/workflows/
    ```
+
    Du siehst ca. 20 YAML-Dateien. Diese stammen aus Microsofts
    [AL-Go for GitHub](https://github.com/microsoft/AL-Go) Template —
    einem vorgefertigten CI/CD-Framework speziell für
@@ -32,17 +34,21 @@ git pull
    | `PublishToEnvironment.yaml` | Manuelles Deployment                      |
 
 2. Öffne `CICD.yaml` in deinem Editor und suche nach dem Trigger-Block:
+
    ```bash
    head -20 .github/workflows/CICD.yaml
    ```
+
    Du siehst `on: push` und `on: workflow_dispatch`. Das bedeutet:
    - Die Pipeline startet automatisch bei jedem Push
    - Sie kann auch manuell ausgelöst werden
 
 3. Öffne die AL-Go Konfiguration:
+
    ```bash
    cat .AL-Go/settings.json
    ```
+
    Hier steht, welches Land (`country`), welche App-Ordner
    (`appFolders`) und welche Umgebung (`environments`) genutzt werden.
 
@@ -52,17 +58,20 @@ Jetzt erzeugst du absichtlich einen Fehler, um zu lernen, wie die
 Pipeline-Logs zu lesen sind.
 
 4. Erstelle einen neuen Branch:
+
    ```bash
    git switch -c experiment/break-the-build
    ```
 
 5. Öffne `app/TrainingItem.Table.al` und füge einen Syntaxfehler ein.
    Ändere z.B. `table` zu `taable`:
+
    ```al
    taable 50100 "Training Item"
    ```
 
 6. Committe und pushe:
+
    ```bash
    git add app/TrainingItem.Table.al
    git commit -m "experiment: break the build"
@@ -83,27 +92,35 @@ GitHub hat eine gute eingebaute Suche. Klicke auf die
 Suchleiste oben (oder drücke `/`) und probiere diese Suchen aus:
 
 1. **Im eigenen Repo suchen:**
+
    ```
    repo:it-erben/bc-dev-training-<dein-username> Caption
    ```
+
    Findet alle Stellen, an denen `Caption` vorkommt.
 
 2. **Nach Dateityp filtern:**
+
    ```
    repo:it-erben/bc-dev-training-<dein-username> language:al field
    ```
+
    Findet nur AL-Dateien mit dem Wort `field`.
 
 3. **In der ganzen Organisation suchen:**
+
    ```
    org:it-erben TrainingItem
    ```
+
    Findet die Datei in allen Repos der Teilnehmer.
 
 4. **Nach Pfad filtern:**
+
    ```
    org:it-erben path:.github/workflows CICD
    ```
+
    Findet Workflow-Dateien in allen Repos.
 
 > **Tipp:** Die vollständige Suchsyntax findest du unter
@@ -160,6 +177,7 @@ git diff main...experiment/break-the-build
 > nutzen und nach `##[error]` suchen, um Fehler schnell zu finden.
 
 10. Du kannst die Logs auch über die Kommandozeile prüfen:
+
     ```bash
     gh run list --limit 1
     gh run view <run-id> --log-failed
@@ -171,6 +189,7 @@ git diff main...experiment/break-the-build
     zu `table`.
 
 12. Committe und pushe den Fix:
+
     ```bash
     git add app/TrainingItem.Table.al
     git commit -m "fix: correct syntax error"
@@ -184,6 +203,7 @@ git diff main...experiment/break-the-build
 
 14. Dieser Branch war nur ein Experiment. Wechsle zurück auf `main`
     und lösche den Branch:
+
     ```bash
     git switch main
     git push origin --delete experiment/break-the-build

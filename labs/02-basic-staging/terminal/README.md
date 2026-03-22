@@ -15,7 +15,7 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 
 ## Aufgaben
 
-Öffne VS Code im Verzeichnis `labs/02-basic-staging/exercise`.
+Öffne das Terminal im Verzeichnis `labs/02-basic-staging/exercise`.
 
 ### Änderungen sichtbar machen mit `git diff`
 
@@ -24,7 +24,7 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 3. Führe `git diff` aus. Dieser Befehl zeigt die Unterschiede zwischen dem
    **Working Directory** und der **Staging Area**. Du solltest die Änderung von
    `v1` zu `v2` sehen.
-4. Führe `git diff --staged` aus. Warum ist die Ausgabe leer? 
+4. Führe `git diff --staged` aus. Warum ist die Ausgabe leer?
 
 > Weil du noch nichts gestaged hast. Die Staging Area enthält noch
 > den gleichen Stand wie der letzte Commit.
@@ -38,15 +38,17 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 8. Überschreibe den Inhalt erneut: `echo "v3" > file.txt`
 9. Führe `git diff` aus. Was zeigt es an?
 10. Führe `git diff --staged` aus. Was zeigt es an?
+
 > Die Staging Area enthält den Wert `v2` (vom
 > letzten `git add`), das Working Directory enthält `v3`, und das Repository
 > enthält noch `v1`. Alle drei Bereiche haben einen unterschiedlichen Stand!
+
 11. Führe `git status` aus. Du wirst sehen, dass `file.txt` **zweimal** in der
     Ausgabe erscheint - einmal als staged, einmal als modified.
 
 > Nimm' dir nun einen Moment Zeit, das sacken zu lassen. Der Unterschied zwischen
-> **Working Directory** und **Staging** ist vielleicht erstmal nicht intuitiv verständlich, 
-> aber sehr wichtig und vor allem später auch sehr praktisch. 
+> **Working Directory** und **Staging** ist vielleicht erstmal nicht intuitiv verständlich,
+> aber sehr wichtig und vor allem später auch sehr praktisch.
 > Fange die Aufgabe gerne von vorne an mit dem Befehl `git reset --hard`,
 > um alle Schritte noch einmal zu sehen.
 

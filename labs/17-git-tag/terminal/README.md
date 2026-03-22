@@ -22,24 +22,29 @@ Es gibt zwei Arten von Tags:
 ### Vorhandene Tags anzeigen
 
 1. Zeige alle vorhandenen Tags an:
+
    ```bash
    git tag
    ```
+
    Es sollten bereits einige Tags vorhanden sein.
 
 ### Einen neuen annotierten Tag erstellen
 
 2. Erstelle einen neuen Commit (z.B. eine kleine Änderung an einer Datei).
 3. Erstelle einen annotierten Tag für diesen Commit:
+
    ```bash
    git tag -a v2.0.0 -m "Release Version 2.0.0"
    ```
+
    Die Option `-a` steht für "annotated", `-m` setzt die Tag-Nachricht direkt.
 
 ### Einen Tag an einen beliebigen Commit setzen
 
 4. Du kannst Tags auch nachträglich an ältere Commits setzen. Finde mit
    `git log --oneline` den Hash eines früheren Commits und tagge ihn:
+
    ```bash
    git tag -a v0.1.0 <sha> -m "Erste Vorabversion"
    ```
@@ -48,15 +53,18 @@ Es gibt zwei Arten von Tags:
 
 5. Das Repository enthält einen annotierten Tag. Finde heraus, welche Nachricht
    er hat:
+
    ```bash
    git show <tagname>
    ```
+
    Bei annotierten Tags zeigt `git show` den Ersteller, das Datum, die Nachricht
    und den zugehörigen Commit.
 
 ### Tags löschen
 
 6. Lösche einen oder mehrere Tags, die nicht mehr gebraucht werden:
+
    ```bash
    git tag -d <tagname>
    ```

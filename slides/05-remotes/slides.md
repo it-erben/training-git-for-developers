@@ -94,7 +94,8 @@ git push
 
 **Was macht `-u` (bzw. `--set-upstream`)?**
 
-Es verknüpft deinen lokalen Branch mit dem Remote-Branch. Danach weiß Git bei `git push` und `git pull` automatisch, wohin bzw. woher.
+Es verknüpft deinen lokalen Branch mit dem Remote-Branch. Danach weiß Git bei `git push` und `git pull`
+automatisch, wohin bzw. woher.
 
 ---
 
@@ -141,7 +142,8 @@ git pull --rebase
 | Kann Konflikte erzeugen | Nein | Ja |
 | Sicher zum "Schauen" | Ja | Nein |
 
-> **Empfehlung:** Im Zweifel erst `git fetch`, dann mit `git log origin/main` schauen, was kommt - und dann bewusst mergen oder rebasen.
+> **Empfehlung:** Im Zweifel erst `git fetch`, dann mit `git log origin/main` schauen,
+> was kommt - und dann bewusst mergen oder rebasen.
 
 ---
 

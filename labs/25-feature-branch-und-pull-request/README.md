@@ -22,6 +22,7 @@ Wir fügen der Training-Items-Tabelle ein neues Feld hinzu: eine
 **Priorität**.
 
 1. Erstelle einen neuen Branch:
+
    ```bash
    git switch -c feature/priority-field
    ```
@@ -51,11 +52,13 @@ Wir fügen der Training-Items-Tabelle ein neues Feld hinzu: eine
    ```
 
 4. Prüfe deine Änderungen:
+
    ```bash
    git diff
    ```
 
 5. Stage und committe:
+
    ```bash
    git add app/TrainingItem.Table.al app/TrainingItems.Page.al
    git commit -m "feat: add priority field to Training Items"
@@ -64,6 +67,7 @@ Wir fügen der Training-Items-Tabelle ein neues Feld hinzu: eine
 ## Phase 3: Push und Pull Request
 
 6. Pushe den Branch zum Remote:
+
    ```bash
    git push -u origin feature/priority-field
    ```
@@ -160,6 +164,7 @@ in Commit-Messages oder PR-Beschreibungen schließen Issues automatisch.
 ## Phase 6: Lokal aufräumen
 
 17. Wechsle zurück auf `main` und hole die Änderungen:
+
     ```bash
     git switch main
     git pull
@@ -167,6 +172,7 @@ in Commit-Messages oder PR-Beschreibungen schließen Issues automatisch.
 
 18. Lösche den Feature-Branch (er ist gemergt und wird nicht mehr
     gebraucht):
+
     ```bash
     git branch -d feature/priority-field
     ```

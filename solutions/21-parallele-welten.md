@@ -132,4 +132,3 @@ git log --oneline --graph --all
   (sicherer Weg).
 - `git branch -D` — Erzwingt das Löschen, auch wenn der Branch nicht gemergt
   wurde (z.B. für abgebrochene Experimente).
-

@@ -44,9 +44,11 @@ A - B - C - D - F' - G' master
 ### Einen einzelnen Commit cherry-picken
 
 3. Cherry-picke den Commit `F`:
+
    ```bash
    git cherry-pick <sha-von-F>
    ```
+
 4. Prüfe die Historie: `git log --oneline`. Der Commit `F` sollte jetzt als
    neuer Commit auf `master` erscheinen.
 5. Prüfe den Inhalt von `names.txt` - die Änderung aus `F` ist jetzt auf
@@ -56,14 +58,17 @@ A - B - C - D - F' - G' master
 
 6. Mache den Cherry-Pick rückgängig, um die Variante mit einem Commit-Bereich
    auszuprobieren:
+
    ```bash
    git reset --hard HEAD^
    ```
+
 > `HEAD^` bedeutet: ein Commit vor dem aktuellen Commit.
 
 7. Prüfe mit `git log --oneline --graph`, dass der Cherry-Pick entfernt wurde.
 
 8. Cherry-picke nun einen **Bereich** von Commits (F bis G):
+
    ```bash
    git cherry-pick <sha-von-F>^..<sha-von-G>
    ```
