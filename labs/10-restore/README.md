@@ -1,6 +1,7 @@
 # Lab 10: Dateien wiederherstellen
 
-`git restore` ist das moderne Werkzeug, um Dateien auf einen früheren Stand zurückzusetzen — egal ob im Working Directory oder in der Staging Area.
+`git restore` ist das moderne Werkzeug, um Dateien auf einen früheren Stand zurückzusetzen — egal ob im Working
+Directory oder in der Staging Area.
 
 ## Anleitungen
 

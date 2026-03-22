@@ -8,7 +8,8 @@ Sehe das Verhalten von .gitignore in VS Code.
 
 ![](images/step_01.jpeg)
 
-2\. Vergebe den Namen [[foo.s]]. Füge beliebigen Inhalt in die neue Datei hinzu. Füge danach mit "New file..." eine weitere Datei hinzu.
+2\. Vergebe den Namen [[foo.s]]. Füge beliebigen Inhalt in die neue Datei hinzu. Füge danach mit "New file..." eine
+weitere Datei hinzu.
 
 ![](images/step_02.jpeg)
 
@@ -16,7 +17,8 @@ Sehe das Verhalten von .gitignore in VS Code.
 
 ![](images/step_03.jpeg)
 
-4\. Füge in die neue Datei den Inhalt [[\*.s]] hinzu. Dir wird kurz darauf auffallen, dass die Datei [[foo.s]] im Dateibrowser ausgegraut ist. Das bedeutet, dass Änderungen an dieser Datei nun von Git ignoriert werden
+4\. Füge in die neue Datei den Inhalt [[\*.s]] hinzu. Dir wird kurz darauf auffallen, dass die Datei [[foo.s]] im
+Dateibrowser ausgegraut ist. Das bedeutet, dass Änderungen an dieser Datei nun von Git ignoriert werden
 
 ![](images/step_04.jpeg)
 
@@ -32,7 +34,8 @@ Sehe das Verhalten von .gitignore in VS Code.
 
 ![](images/step_07.jpeg)
 
-8\. Wir wollen nun sehen, was passiert, wenn man Änderungen an Dateien macht, die nicht von Anfang an in der [[.gitignore]] waren. Füge der [[.gitignore]] die Zeile [[file1.txt]] hinzu
+8\. Wir wollen nun sehen, was passiert, wenn man Änderungen an Dateien macht, die nicht von Anfang an in der
+[[.gitignore]] waren. Füge der [[.gitignore]] die Zeile [[file1.txt]] hinzu
 
 ![](images/step_08.jpeg)
 
@@ -48,7 +51,8 @@ Sehe das Verhalten von .gitignore in VS Code.
 
 ![](images/step_11.jpeg)
 
-12\. Gehe wieder in die Repository-Ansicht. Die Datei test.txt wird als geändert erscheinen, obwohl sie in der .gitignore ist! Das liegt daran, dass sie schon existierte, als sie noch nicht von Git ignoriert wurde.
+12\. Gehe wieder in die Repository-Ansicht. Die Datei test.txt wird als geändert erscheinen, obwohl sie in der
+.gitignore ist! Das liegt daran, dass sie schon existierte, als sie noch nicht von Git ignoriert wurde.
 
 ![](images/step_12.jpeg)
 
@@ -60,6 +64,7 @@ Sehe das Verhalten von .gitignore in VS Code.
 
 ![](images/step_14.jpeg)
 
-15\. Commite die Änderung mit einer beliebigen Message. Die Datei ist nun aus dem Index entfernt, aber weiterhin auf deiner Festplatte vorhanden.
+15\. Commite die Änderung mit einer beliebigen Message. Die Datei ist nun aus dem Index entfernt, aber weiterhin auf
+deiner Festplatte vorhanden.
 
 ![](images/step_15.jpeg)

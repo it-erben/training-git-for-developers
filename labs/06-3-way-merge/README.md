@@ -1,6 +1,7 @@
 # Lab 06: 3-Way-Merge
 
-Wenn beide Branches parallel weiterentwickelt wurden, führt Git einen 3-Way-Merge durch. Dabei entsteht ein Merge-Commit, der die Änderungen beider Seiten zusammenführt.
+Wenn beide Branches parallel weiterentwickelt wurden, führt Git einen 3-Way-Merge durch. Dabei entsteht ein
+Merge-Commit, der die Änderungen beider Seiten zusammenführt.
 
 ## Anleitungen
 

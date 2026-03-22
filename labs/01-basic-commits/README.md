@@ -1,6 +1,7 @@
 # Lab 01: Erste Commits
 
-Lerne die grundlegendsten Git-Befehle kennen: `git add`, `git commit`, `git status` und `git log`. Du erstellst eine Datei, fügst sie zur Versionskontrolle hinzu und speicherst Änderungen als Commits.
+Lerne die grundlegendsten Git-Befehle kennen: `git add`, `git commit`, `git status` und `git log`. Du erstellst eine
+Datei, fügst sie zur Versionskontrolle hinzu und speicherst Änderungen als Commits.
 
 ## Anleitungen
 

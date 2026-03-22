@@ -1,6 +1,7 @@
 # Lab 11: Git Revert
 
-Anders als `git reset` erstellt `git revert` einen neuen Commit, der die Änderungen eines früheren Commits rückgängig macht. Die ursprüngliche Historie bleibt erhalten — ideal für bereits gepushte Commits.
+Anders als `git reset` erstellt `git revert` einen neuen Commit, der die Änderungen eines früheren Commits rückgängig
+macht. Die ursprüngliche Historie bleibt erhalten — ideal für bereits gepushte Commits.
 
 ## Anleitungen
 

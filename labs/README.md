@@ -1,6 +1,8 @@
 # Labs
 
-Alle Übungen im Überblick. Jedes Lab enthält ein Setup-Skript (`setup.sh` / `setup.ps1`), das die Übungsumgebung vorbereitet. Labs 01–18 und 20 bieten Anleitungen für **Terminal** und **VS Code**; die übrigen Labs sind werkzeugunabhängig.
+Alle Übungen im Überblick. Jedes Lab enthält ein Setup-Skript (`setup.sh` / `setup.ps1`), das die Übungsumgebung
+vorbereitet. Labs 01–18 und 20 bieten Anleitungen für **Terminal** und **VS Code**; die übrigen Labs sind
+werkzeugunabhängig.
 
 ## Grundlagen
 

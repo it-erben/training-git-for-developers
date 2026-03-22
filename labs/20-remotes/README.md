@@ -1,6 +1,7 @@
 # Lab 20: Remotes
 
-Arbeite mit Remote-Repositories: Push, Pull, Fetch und Remote-Branches. Das Setup simuliert ein Remote und einen zweiten Klon als "Kollegen".
+Arbeite mit Remote-Repositories: Push, Pull, Fetch und Remote-Branches. Das Setup simuliert ein Remote und einen zweiten
+Klon als "Kollegen".
 
 ## Anleitungen
 

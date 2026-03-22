@@ -1,6 +1,7 @@
 # Lab 16: Squashing
 
-Fasse mehrere kleine Commits mit `git rebase -i` (Interactive Rebase) zu einem sauberen, aussagekräftigen Commit zusammen — bevor du deine Arbeit teilst.
+Fasse mehrere kleine Commits mit `git rebase -i` (Interactive Rebase) zu einem sauberen, aussagekräftigen Commit
+zusammen — bevor du deine Arbeit teilst.
 
 ## Anleitungen
 

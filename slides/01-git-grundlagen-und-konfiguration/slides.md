@@ -181,6 +181,7 @@ git config --global credential.helper osxkeychain
 ```
 
 > `credential.helper store` speichert Passwörter als **Klartext**
+>
 > - nutze stattdessen `cache` mit Timeout.
 
 ---

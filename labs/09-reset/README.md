@@ -1,6 +1,7 @@
 # Lab 09: Git Reset
 
-Setze den Branch-Zeiger auf einen früheren Commit zurück. Je nach Modus (`--soft`, `--mixed`, `--hard`) wirkt sich der Reset unterschiedlich auf Staging Area und Working Directory aus.
+Setze den Branch-Zeiger auf einen früheren Commit zurück. Je nach Modus (`--soft`, `--mixed`, `--hard`) wirkt sich der
+Reset unterschiedlich auf Staging Area und Working Directory aus.
 
 ## Anleitungen
 

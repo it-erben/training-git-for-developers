@@ -43,6 +43,7 @@ korrigierte Version ersetzt.
 
 > **Tipp:** Wenn du nur die Nachricht ändern möchtest, ohne den Editor zu
 > öffnen, geht das auch mit:
+>
 > ```bash
 > git commit --amend -m "Neue Nachricht"
 > ```

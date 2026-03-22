@@ -1,6 +1,7 @@
 # Slides
 
-Foliensätze zu den Kursmodulen. Jedes Modul enthält eine `slides.md`-Datei im Marp-Format sowie ggf. ein `images/`-Verzeichnis mit den verwendeten Abbildungen.
+Foliensätze zu den Kursmodulen. Jedes Modul enthält eine `slides.md`-Datei im Marp-Format sowie ggf. ein
+`images/`-Verzeichnis mit den verwendeten Abbildungen.
 
 | Modul | Thema | Beschreibung |
 |-------|-------|--------------|

@@ -1,6 +1,7 @@
 # Lab 02: Die Staging Area
 
-Verstehe das Drei-Bereiche-Modell von Git: Working Directory, Staging Area und Repository. Du lernst, wie Änderungen gestagt, verglichen und rückgängig gemacht werden.
+Verstehe das Drei-Bereiche-Modell von Git: Working Directory, Staging Area und Repository. Du lernst, wie Änderungen
+gestagt, verglichen und rückgängig gemacht werden.
 
 ## Anleitungen
 

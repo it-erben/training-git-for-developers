@@ -1,9 +1,9 @@
 # Lab 16: Squashing mit Interactive Rebase (Terminal)
 
-Während der Arbeit an einem Feature entstehen oft viele kleine Commits: "WIP", 
+Während der Arbeit an einem Feature entstehen oft viele kleine Commits: "WIP",
 "Fix typo", "Forgot file", "Now really fixed". Bevor du deine Arbeit teilst oder
 in `master` mergst, ist es sinnvoll, diese Commits zu einem sauberen,
-aussagekräftigen Commit zusammenzufassen. Diesen Vorgang nennt man 
+aussagekräftigen Commit zusammenzufassen. Diesen Vorgang nennt man
 **Squashing**.
 
 Das Werkzeug dafür ist `git rebase -i` (Interactive Rebase). Damit kannst du
@@ -21,11 +21,14 @@ Commits nachträglich zusammenfassen, umsortieren, umbenennen oder entfernen.
    bearbeiten alle `file.txt` und gehören logisch zusammen.
 
 2. Starte einen interaktiven Rebase über die letzten fünf Commits:
+
    ```bash
    git rebase -i HEAD~5
    ```
+
    Git öffnet einen Editor mit einer Liste der Commits. Vor jedem Commit steht
    das Wort `pick`:
+
    ```
    pick abc1234 Erster Commit
    pick def5678 Zweiter Commit
@@ -36,6 +39,7 @@ Commits nachträglich zusammenfassen, umsortieren, umbenennen oder entfernen.
 3. Ändere bei den **vier unteren** Commits das Wort `pick` zu `squash` (oder
    kurz `s`). Der **erste** Commit bleibt auf `pick`. Die Commits werden dann
    alle in den ersten hinein zusammengefasst:
+
    ```
    pick abc1234 Erster Commit
    squash def5678 Zweiter Commit

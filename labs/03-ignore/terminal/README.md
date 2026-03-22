@@ -32,9 +32,9 @@ Datei nachträglich ignoriert werden soll.
 9. Ändere den Inhalt von `file1.txt`.
 10. Was zeigt `git status`? Die Änderung wird trotz `.gitignore` angezeigt.
 
-> **Wichtiger Grundsatz:** `.gitignore` wirkt nur auf 
-> **neue, noch nicht getrackte Dateien**. Dateien, die bereits einmal committet 
-> wurden, werden weiterhin von Git verfolgt - auch wenn ihr Muster 
+> **Wichtiger Grundsatz:** `.gitignore` wirkt nur auf
+> **neue, noch nicht getrackte Dateien**. Dateien, die bereits einmal committet
+> wurden, werden weiterhin von Git verfolgt - auch wenn ihr Muster
 > nachträglich in `.gitignore` aufgenommen wird.
 
 11. Erstelle eine neue Datei `file2.txt`. Was zeigt `git status`? Diese Datei
@@ -44,9 +44,11 @@ Datei nachträglich ignoriert werden soll.
 
 12. Um `file1.txt` aus dem Git-Tracking zu entfernen (aber im Dateisystem zu
     behalten), nutze den Befehl:
+
     ```bash
     git rm --cached file1.txt
     ```
+
     Damit wird die Datei aus dem Index (der **Staging Area**) entfernt, bleibt aber
     physisch im Arbeitsverzeichnis erhalten.
 13. Was zeigt `git status` jetzt?

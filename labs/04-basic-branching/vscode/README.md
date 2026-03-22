@@ -1,21 +1,19 @@
 # Lab 04: Branching (VS Code)
 
-Lerne, wie du einen neuen Branch erstellst, neue Dateien hinzufügst und Änderungen über eine webbasierte Git-Oberfläche commitest. Diese Anleitung ist ideal, um grundlegende Branching- und Commit-Workflows in Git zu verstehen.
+Lerne, wie du einen neuen Branch erstellst, neue Dateien hinzufügst und Änderungen über eine webbasierte Git-Oberfläche
+commitest. Diese Anleitung ist ideal, um grundlegende Branching- und Commit-Workflows in Git zu verstehen.
 
 1. Öffne VS Code im Verzeichnis `labs/04-basic-branching/exercise`.
 
 ![](images/step_01.jpeg)
 
-
 2. Wechsle auf die Repository-Ansicht.
 
 ![](images/step_02.jpeg)
 
-
 3. Klicke auf "master"
 
 ![](images/step_03.jpeg)
-
 
 4. Klicke auf "Create new branch..."
 

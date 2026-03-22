@@ -1,6 +1,7 @@
 # Lab 12: Git Stash
 
-Lege halbfertige Änderungen mit `git stash` auf einen internen Stapel, wechsle den Branch für eine dringende Aufgabe und stelle deine Arbeit danach wieder her.
+Lege halbfertige Änderungen mit `git stash` auf einen internen Stapel, wechsle den Branch für eine dringende Aufgabe und
+stelle deine Arbeit danach wieder her.
 
 ## Anleitungen
 

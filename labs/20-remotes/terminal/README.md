@@ -24,23 +24,30 @@ Verzeichnis.
 ## Phase 1: Pushen
 
 1. Der Remote kennt den Branch noch nicht. Pushe den `master`-Branch:
+
    ```bash
    git push -u origin master
    ```
+
    Die Option `-u` setzt das Tracking, sodass `git push` und `git pull` danach
    ohne Argumente funktionieren.
 
 2. Erstelle eine neue Datei, stage und committe sie:
 
    **Bash:**
+
    ```bash
    echo "wichtige Info" > info.txt
    ```
+
    **PowerShell:**
+
    ```powershell
    Set-Content info.txt "wichtige Info"
    ```
+
    Dann:
+
    ```bash
    git add info.txt
    git commit -m "Add info file"
@@ -50,6 +57,7 @@ Verzeichnis.
    'origin/master' by 1 commit."
 
 4. Pushe den neuen Commit:
+
    ```bash
    git push
    ```
@@ -62,6 +70,7 @@ die ein Kollege auf dem Remote gemacht hat.
 5. Wechsle in den vorbereiteten Kollegen-Klon und mache dort Änderungen:
 
    **Bash:**
+
    ```bash
    cd ../kollege
    git pull
@@ -71,7 +80,9 @@ die ein Kollege auf dem Remote gemacht hat.
    git push
    cd ../exercise
    ```
+
    **PowerShell:**
+
    ```powershell
    cd ..\kollege
    git pull
@@ -86,6 +97,7 @@ die ein Kollege auf dem Remote gemacht hat.
    Dein lokales Repo weiß noch nichts von der Änderung.
 
 7. Hole die Informationen über neue Commits, **ohne** sie zu mergen:
+
    ```bash
    git fetch
    ```
@@ -95,9 +107,11 @@ die ein Kollege auf dem Remote gemacht hat.
    lokal integriert.
 
 9. Integriere die Änderung:
+
    ```bash
    git pull
    ```
+
    Prüfe: `nachricht.txt` ist jetzt da.
 
 ## Phase 3: Remote-Branches
@@ -105,6 +119,7 @@ die ein Kollege auf dem Remote gemacht hat.
 10. Wechsle zurück in den Kollegen-Klon und erstelle einen neuen Branch:
 
     **Bash:**
+
     ```bash
     cd ../kollege
     git switch -c feature/remote-test
@@ -114,7 +129,9 @@ die ein Kollege auf dem Remote gemacht hat.
     git push -u origin feature/remote-test
     cd ../exercise
     ```
+
     **PowerShell:**
+
     ```powershell
     cd ..\kollege
     git switch -c feature/remote-test
@@ -126,20 +143,25 @@ die ein Kollege auf dem Remote gemacht hat.
     ```
 
 11. Hole die neuen Branch-Informationen:
+
     ```bash
     git fetch
     ```
 
 12. Zeige alle Branches (lokal und remote):
+
     ```bash
     git branch -a
     ```
+
     Du siehst `remotes/origin/feature/remote-test`.
 
 13. Wechsle auf den Remote-Branch:
+
     ```bash
     git switch feature/remote-test
     ```
+
     Git erstellt automatisch einen lokalen Tracking-Branch.
 
 14. Prüfe: `feature.txt` ist jetzt lokal vorhanden.

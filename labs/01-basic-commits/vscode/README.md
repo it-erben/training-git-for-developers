@@ -6,40 +6,31 @@ In dieser Aufgabe erstellst du deinen ersten Commit in VS Code und schaust dir d
 
 ![](images/step_01.jpeg)
 
-
 2\. Klicke auf diesen Knopf
 
 ![](images/step_02.jpeg)
 
-
 3\. Tippe `meinedatei.txt`
-
 
 4\. Kicke auf `meinedatei.txt`
 
 ![](images/step_03.jpeg)
 
-
 5\. Tippe "Hallo Welt"
-
 
 6\. **Klicke auf das** Repository-Symbol
 
 ![](images/step_04.jpeg)
 
-
 7\. Klicke auf das +
 
 ![](images/step_05.jpeg)
 
-
 8\. Gebe als Message "Initial Commit" ein
-
 
 9\. Klicke "Commit"
 
 ![](images/step_06.jpeg)
-
 
 10\. Klicke auf den Commit unten in der Liste, um dir Details anzuzeigen.
 

@@ -1,6 +1,7 @@
 # Lab 03: .gitignore
 
-Lerne, wie du mit `.gitignore` Dateien gezielt von der Versionskontrolle ausschließt — und was passiert, wenn eine bereits getrackte Datei nachträglich ignoriert werden soll.
+Lerne, wie du mit `.gitignore` Dateien gezielt von der Versionskontrolle ausschließt — und was passiert, wenn eine
+bereits getrackte Datei nachträglich ignoriert werden soll.
 
 ## Anleitungen
 

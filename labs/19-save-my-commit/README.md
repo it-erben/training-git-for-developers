@@ -39,9 +39,11 @@ wiederfinden und retten.
 ### Methode 2: Wiederherstellen mit git cherry-pick
 
 6. Mache die Lösung zuerst rückgängig:
+
    ```bash
    git reset --hard initial-commit
    ```
+
 7. Nutze `git cherry-pick <sha>`, um den verlorenen Commit als neuen Commit auf
    den aktuellen Branch zu übernehmen.
 8. Vergleiche das Ergebnis mit der vorherigen Methode. Was ist der Unterschied?
@@ -51,24 +53,30 @@ wiederfinden und retten.
 ### Was passiert, wenn der Garbage Collector läuft?
 
 9. Setze erneut zurück:
+
    ```bash
    git reset --hard initial-commit
    ```
+
 10. Prüfe mit `git reflog`, dass die Einträge noch da sind. Führe dann nur
     den Garbage Collector aus:
+
     ```bash
     git gc
     ```
+
     Versuche, den verlorenen Commit wiederherzustellen. Es funktioniert noch!
     Das liegt daran, dass das Reflog selbst Referenzen auf die Commits hält
     und `git gc` sie deshalb nicht löscht.
 
 11. Um die Commits wirklich zu entfernen, musst du **zuerst das Reflog
     leeren** und dann den GC mit `--prune=now` aufrufen:
+
     ```bash
     git reflog expire --expire=now --all
     git gc --prune=now
     ```
+
 12. Versuche jetzt, den verlorenen Commit mit `git reflog` zu finden. Das
     Reflog ist leer - die Commits sind endgültig weg.
 

@@ -139,7 +139,6 @@ exzellente Testabdeckung
 
 ## Welche Strategie passt?
 
-
 | Kriterium | Git Flow | GitHub Flow | Trunk-Based |
 |-----------|----------|-------------|-------------|
 | Komplexität | Hoch | Niedrig | Niedrig |
@@ -193,7 +192,8 @@ MAJOR.MINOR.BUILD.REVISION
   └───────────────────── Manuell: Breaking Changes
 ```
 
-**Wichtig:** Die Version in `app.json` muss bei jedem Deployment **aufsteigend** sein. Eine niedrigere Version kann nicht installiert werden.
+**Wichtig:** Die Version in `app.json` muss bei jedem Deployment **aufsteigend** sein.
+Eine niedrigere Version kann nicht installiert werden.
 
 ---
 

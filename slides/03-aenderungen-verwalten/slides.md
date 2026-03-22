@@ -158,7 +158,7 @@ git cherry-pick --abort
 git cherry-pick --continue
 ```
 
-> **Vorsicht:** Cherry-Pick erstellt einen **neuen Commit** mit neuem Hash. 
+> **Vorsicht:** Cherry-Pick erstellt einen **neuen Commit** mit neuem Hash.
 > Der Original-Commit und der Cherry-Pick sind nicht identisch.
 
 ---
@@ -172,6 +172,7 @@ Rebase verschiebt Commits auf eine neue Basis:
 ---
 
 ## Rebase (Fortsetzung)
+
 ```bash
 git switch feature/customer-list
 git rebase main
