@@ -15,7 +15,7 @@ ist aber nützlich, um gezielt zu kontrollieren, was in einen Commit einfließt.
 
 ## Aufgaben
 
-Öffne VS Code im Verzeichnis `labs/02-basic-staging/exercise`.
+Öffne das Terminal im Verzeichnis `labs/02-basic-staging/exercise`.
 
 ### Änderungen sichtbar machen mit `git diff`
 

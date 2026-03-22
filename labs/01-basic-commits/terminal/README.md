@@ -10,7 +10,7 @@ behalten.
 
 ### Eine neue Datei anlegen und committen
 
-Öffne Visual Studio Code in dem Exercise-Verzeichnis für 
+Öffne das Terminal in dem Exercise-Verzeichnis für 
 Lab 01 (`labs/01-basic-commits/exercise`).
 
 Lege deine erste Datei an und füge sie dem Repository hinzu. In Git

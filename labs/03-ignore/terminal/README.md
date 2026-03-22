@@ -10,7 +10,7 @@ Datei nachträglich ignoriert werden soll.
 
 ## Aufgaben
 
-Öffne VS Code im Verzeichnis `labs/03-ignore/exercise`.
+Öffne das Terminal im Verzeichnis `labs/03-ignore/exercise`.
 
 ### Dateien per Muster ignorieren
 

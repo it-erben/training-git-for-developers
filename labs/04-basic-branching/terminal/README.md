@@ -8,19 +8,9 @@ Erstellen und Wechseln von Branches in Git extrem schnell - ganz anders als in
 In dieser Übung erstellst du eigene Branches, wechselst zwischen ihnen und
 beobachtest, wie sich dein Arbeitsverzeichnis dabei verändert.
 
-## Vorbereitung
-
-**Bash**
-```bash
-bash setup.sh
-```
-
-**Powershell**
-```
-.\setup.ps1
-```
-
 ## Aufgaben
+
+Öffne das Terminal im Verzeichnis `labs/04-basic-branching/exercise`.
 
 ### Branches erkunden
 
