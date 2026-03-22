@@ -1,4 +1,4 @@
-# Übung 17: Tags - Commits markieren
+# Lab 17: Tags (Terminal)
 
 Tags sind benannte Markierungen, die auf einen bestimmten Commit zeigen. Anders
 als Branches bewegen sich Tags nicht weiter - sie bleiben immer auf dem gleichen

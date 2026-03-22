@@ -1,4 +1,4 @@
-# Lab 11: Commits rückgängig machen mit Revert in VS Code
+# Lab 11: Git Revert (VS Code)
 
 In dieser Übung revertest du gezielt einzelne Commits über GitLens und
 beobachtest, wie sich die Historie und das Arbeitsverzeichnis verändern.

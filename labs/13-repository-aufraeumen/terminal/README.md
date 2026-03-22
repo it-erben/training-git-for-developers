@@ -1,4 +1,4 @@
-# Lab 13: Repositories aufräumen
+# Lab 13: Repositories aufräumen (Terminal)
 
 ## Hintergrund
 

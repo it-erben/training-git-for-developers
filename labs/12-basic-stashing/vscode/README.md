@@ -1,4 +1,4 @@
-# Lab 12: Stashing in VS Code
+# Lab 12: Git Stash (VS Code)
 
 Stell dir vor, du arbeitest an einem Feature und ein dringender Bug wird
 gemeldet. Deine halbfertigen Änderungen willst du weder committen noch

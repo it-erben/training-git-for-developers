@@ -1,4 +1,4 @@
-# Übung 11: Commits rückgängig machen mit git revert
+# Lab 11: Git Revert (Terminal)
 
 Anders als `git reset`, das die Historie verändert, erstellt `git revert` einen
 **neuen Commit**, der die Änderungen eines früheren Commits rückgängig macht.

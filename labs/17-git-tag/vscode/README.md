@@ -1,4 +1,4 @@
-# Lab 17: Tags in VS Code
+# Lab 17: Tags (VS Code)
 
 Tags markieren bestimmte Commits dauerhaft - z.B. Release-Versionen. Anders als
 Branches bewegen sich Tags nicht weiter.

@@ -1,4 +1,4 @@
-# Übung 3: Dateien ignorieren mit .gitignore
+# Lab 03: .gitignore (Terminal)
 
 Nicht jede Datei gehört ins Repository. Build-Artefakte, temporäre Dateien,
 IDE-Konfigurationen oder Abhängigkeiten (z.B. `node_modules/`) sollten von der

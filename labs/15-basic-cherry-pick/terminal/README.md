@@ -1,4 +1,4 @@
-# Übung 15: Cherry-Pick - Einzelne Commits gezielt übernehmen
+# Lab 15: Cherry-Pick (Terminal)
 
 Manchmal möchtest du nicht einen ganzen Branch mergen, sondern nur **bestimmte
 Commits** aus einem anderen Branch übernehmen. Genau dafür gibt es

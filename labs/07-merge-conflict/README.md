@@ -1,4 +1,4 @@
-# Übung 7: Merge-Konflikte lösen
+# Lab 07: Merge-Konflikte lösen
 
 In der vorherigen Übung hat Git die Änderungen zweier Branches automatisch zusammengeführt, weil sie unterschiedliche Dateien betroffen haben. Aber was passiert, wenn auf beiden Branches **die gleiche Stelle** in der gleichen Datei geändert wurde? Dann kann Git nicht automatisch entscheiden, welche Version korrekt ist, und meldet einen **Merge-Konflikt**.
 

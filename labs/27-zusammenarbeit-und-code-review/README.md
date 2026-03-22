@@ -1,4 +1,4 @@
-# Lab 4: Zusammenarbeit und Code Review
+# Lab 27: Zusammenarbeit und Code Review
 
 In dieser Übung arbeitest du mit einem anderen Teilnehmer zusammen.
 Ihr reviewt gegenseitig eure Pull Requests und lernt dabei den

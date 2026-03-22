@@ -1,4 +1,4 @@
-# Übung 2: Die Staging Area
+# Lab 02: Die Staging Area (Terminal)
 
 In dieser Übung geht es darum, die **Staging Area** (auch Index genannt) zu
 verstehen. Git arbeitet mit drei Bereichen:

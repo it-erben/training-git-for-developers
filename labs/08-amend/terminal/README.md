@@ -1,4 +1,4 @@
-# Übung 8: Commits nachträglich ändern mit --amend
+# Lab 08: Commits ändern mit Amend (Terminal)
 
 Es passiert jedem: Du hast gerade einen Commit erstellt und merkst dann, dass du
 eine Datei vergessen hast, ein Tippfehler in der Commit-Nachricht steckt, oder

@@ -1,4 +1,4 @@
-# Übung 1: Erste Commits
+# Lab 01: Erste Commits (Terminal)
 
 In dieser Übung lernst du die grundlegendsten Git-Befehle kennen: `git add` und
 `git commit`. Damit fügst du Dateien zur Versionskontrolle hinzu und speicherst

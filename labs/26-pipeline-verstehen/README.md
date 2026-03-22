@@ -1,4 +1,4 @@
-# Lab 3: Die CI/CD Pipeline verstehen
+# Lab 26: Die CI/CD Pipeline verstehen
 
 In dieser Übung schaust du unter die Haube der Pipeline. Du lernst,
 wie GitHub Actions Workflows aufgebaut sind, was die einzelnen Schritte

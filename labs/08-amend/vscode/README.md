@@ -1,4 +1,4 @@
-# Lab 08: Commits nachträglich ändern mit Amend in VS Code
+# Lab 08: Commits ändern mit Amend (VS Code)
 
 Es passiert jedem: Du hast gerade einen Commit erstellt und merkst dann, dass du
 eine Datei vergessen hast oder ein Tippfehler in der Commit-Nachricht steckt.

@@ -1,4 +1,4 @@
-# Übung 14: Rebase - Lineare Historie durch Umbasieren
+# Lab 14: Rebase (Terminal)
 
 Beim Mergen entsteht ein Merge-Commit, der die Zusammenführung dokumentiert. Das
 ist oft gewünscht, kann bei vielen kleinen Branches aber zu einer

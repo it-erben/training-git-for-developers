@@ -1,4 +1,4 @@
-# Lab 1: Projekt-Setup und erster Deploy
+# Lab 24: Projekt-Setup und erster Deploy
 
 In dieser Übung richtest du dein eigenes Business-Central-Projekt ein und
 siehst, wie eine CI/CD-Pipeline automatisch deine Anwendung

@@ -1,4 +1,4 @@
-# Lab 16: Commits zusammenfassen mit Interactive Rebase in VS Code
+# Lab 16: Squashing mit Interactive Rebase (VS Code)
 
 Vor dem Teilen deiner Arbeit ist es sinnvoll, viele kleine Commits ("WIP", "Fix
 typo") zu einem sauberen Commit zusammenzufassen. GitLens bietet dafür einen

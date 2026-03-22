@@ -1,4 +1,4 @@
-# Übung 4: Branching - Arbeiten mit Branches
+# Lab 04: Branching (Terminal)
 
 Branches (Verzweigungen) sind eines der mächtigsten Konzepte in Git. Ein Branch
 ist im Grunde nur ein leichtgewichtiger Zeiger auf einen Commit. Dadurch ist das

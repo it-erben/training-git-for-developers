@@ -1,4 +1,4 @@
-# Lab 13: Repositories aufräumen in VS Code
+# Lab 13: Repositories aufräumen (VS Code)
 
 ## Hintergrund
 

@@ -1,4 +1,4 @@
-# Lab 09: Git Reset und Revert in VS Code
+# Lab 09: Git Reset (VS Code)
 
 In dieser Übung nutzt du GitLens, um verschiedene Reset-Modi (`--soft`,
 `--mixed`, `--hard`) auszuprobieren und einen Commit mit Revert rückgängig zu

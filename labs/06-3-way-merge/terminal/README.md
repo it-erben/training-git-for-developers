@@ -1,4 +1,4 @@
-# Übung 6: 3-Way-Merge
+# Lab 06: 3-Way-Merge (Terminal)
 
 In der vorherigen Übung hast du einen Fast-Forward-Merge durchgeführt - das war
 möglich, weil sich nur ein Branch weiterentwickelt hat. In der Praxis passiert

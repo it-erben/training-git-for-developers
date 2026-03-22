@@ -1,4 +1,4 @@
-# Übung 19: Verlorene Commits retten mit git reflog
+# Lab 19: Git Reflog
 
 In dieser Übung wurde der `master`-Branch auf den initialen Commit
 zurückgesetzt - und damit scheinbar wichtige Arbeit verloren. Die Datei

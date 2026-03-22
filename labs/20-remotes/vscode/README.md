@@ -1,4 +1,4 @@
-# Lab 20: Arbeiten mit Remotes in VS Code
+# Lab 20: Remotes (VS Code)
 
 In dieser Übung lernst du, wie du in VS Code mit Remote-Repositories arbeitest:
 Pushen, Pullen, Fetch und den Umgang mit Remote-Branches.

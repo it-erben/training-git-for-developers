@@ -1,4 +1,4 @@
-# Lab 01: Erstelle deinen ersten Git Commit in VS Code.
+# Lab 01: Erste Commits (VS Code)
 
 In dieser Aufgabe erstellst du deinen ersten Commit in VS Code und schaust dir danach das Ergebnis an.
 

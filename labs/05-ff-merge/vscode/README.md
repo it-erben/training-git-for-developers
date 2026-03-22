@@ -1,4 +1,4 @@
-# Lab 05: Fast Forward Merges mit VS Code
+# Lab 05: Fast-Forward-Merge (VS Code)
 
 Lerne, wie du einen neuen Branch in VS Code erstellst, Änderungen an einer Datei vornimmst und diese commitest. Anschließend führst du einen Fast-Forward-Merge durch. Diese Anleitung behandelt die grundlegenden Schritte für das Arbeiten mit Branches und Merges.
 

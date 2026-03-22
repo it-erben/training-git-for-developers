@@ -1,4 +1,4 @@
-# Übung 18: Bugs finden mit git bisect
+# Lab 18: Git Bisect (Terminal)
 
 Du kommst aus dem Urlaub zurück und stellst fest: Der `master`-Branch ist
 kaputt. Der Build schlägt fehl, und es ist unklar, welcher von den vielen

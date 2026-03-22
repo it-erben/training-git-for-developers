@@ -1,4 +1,4 @@
-# Übung 7: Merge-Konflikte lösen
+# Lab 07: Merge-Konflikte lösen (Terminal)
 
 In der vorherigen Übung hat Git die Änderungen zweier Branches automatisch
 zusammengeführt, weil sie unterschiedliche Dateien betroffen haben. Aber was

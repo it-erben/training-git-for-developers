@@ -1,4 +1,4 @@
-# Lab 07: Merge-Konflikte lösen in VS Code
+# Lab 07: Merge-Konflikte lösen (VS Code)
 
 In der vorherigen Übung hat Git die Änderungen zweier Branches automatisch
 zusammengeführt, weil sie unterschiedliche Dateien betroffen haben. Aber was

@@ -1,4 +1,4 @@
-# Lab 20: Arbeiten mit Remotes
+# Lab 20: Remotes (Terminal)
 
 In dieser Übung lernst du, wie du mit Remote-Repositories arbeitest: Pushen,
 Pullen, Fetch und den Umgang mit Remote-Branches.

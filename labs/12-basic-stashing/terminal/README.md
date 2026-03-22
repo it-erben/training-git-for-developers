@@ -1,4 +1,4 @@
-# Übung 12: Arbeit zwischenspeichern mit git stash
+# Lab 12: Git Stash (Terminal)
 
 Stell dir folgendes Szenario vor: Du arbeitest an einem neuen Feature, hast
 bereits einige Änderungen gemacht - teils gestagt, teils noch nicht - und

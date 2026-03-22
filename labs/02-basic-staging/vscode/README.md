@@ -1,4 +1,4 @@
-# Lab 02: Working Area und Staging Area in VS Code
+# Lab 02: Die Staging Area (VS Code)
 
 Lerne, wie Änderungen am Repository in VS Code angezeigt und rückgängig gemacht werden können.
 

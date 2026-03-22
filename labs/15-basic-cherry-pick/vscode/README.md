@@ -1,4 +1,4 @@
-# Lab 15: Cherry-Pick in VS Code
+# Lab 15: Cherry-Pick (VS Code)
 
 Mit Cherry-Pick kannst du einzelne Commits aus einem anderen Branch übernehmen,
 ohne den ganzen Branch zu mergen.

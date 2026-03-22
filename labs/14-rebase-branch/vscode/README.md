@@ -1,4 +1,4 @@
-# Lab 14: Rebase in VS Code
+# Lab 14: Rebase (VS Code)
 
 Beim Rebase werden die Commits eines Branches auf die Spitze eines anderen
 Branches aufgesetzt. Das Ergebnis ist eine lineare Historie ohne Merge-Commits.

@@ -1,4 +1,4 @@
-# Lab 2: Feature Branch und Pull Request
+# Lab 25: Feature Branch und Pull Request
 
 In dieser Übung lernst du den typischen Workflow in einem Team kennen:
 Eine Änderung auf einem eigenen Branch entwickeln, als Pull Request

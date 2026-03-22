@@ -1,4 +1,4 @@
-# Lab 10: Dateien wiederherstellen in VS Code
+# Lab 10: Dateien wiederherstellen (VS Code)
 
 In dieser Übung lernst du, wie du in VS Code Änderungen verwirfst, Staging
 rückgängig machst und gelöschte Dateien wiederherstellst.

@@ -1,4 +1,4 @@
-# Übung 10: Dateien wiederherstellen mit git restore
+# Lab 10: Dateien wiederherstellen (Terminal)
 
 Fehler passieren: Du hast eine Datei versehentlich geändert, versehentlich
 gestaged, oder möchtest eine Datei auf einen früheren Stand zurücksetzen. Der

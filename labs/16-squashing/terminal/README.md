@@ -1,4 +1,4 @@
-# Übung 16: Commits zusammenfassen mit Interactive Rebase
+# Lab 16: Squashing mit Interactive Rebase (Terminal)
 
 Während der Arbeit an einem Feature entstehen oft viele kleine Commits: "WIP", 
 "Fix typo", "Forgot file", "Now really fixed". Bevor du deine Arbeit teilst oder

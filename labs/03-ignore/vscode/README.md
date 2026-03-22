@@ -1,4 +1,4 @@
-# Lab 03: .gitignore in VS Code
+# Lab 03: .gitignore (VS Code)
 
 Sehe das Verhalten von .gitignore in VS Code.
 

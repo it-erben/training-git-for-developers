@@ -1,4 +1,4 @@
-# Lab 06: 3-Way-Merge in VS Code
+# Lab 06: 3-Way-Merge (VS Code)
 
 In der vorherigen Übung hast du einen Fast-Forward-Merge durchgeführt. Das war
 möglich, weil sich nur ein Branch weiterentwickelt hat. In der Praxis passiert

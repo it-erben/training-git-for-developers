@@ -1,4 +1,4 @@
-# Übung 5: Fast-Forward-Merge
+# Lab 05: Fast-Forward-Merge (Terminal)
 
 Wenn du einen Feature-Branch in einen anderen Branch (z.B. `master`) mergst und
 auf `master` in der Zwischenzeit keine neuen Commits hinzugekommen sind, kann

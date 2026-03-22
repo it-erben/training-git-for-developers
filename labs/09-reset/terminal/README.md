@@ -1,4 +1,4 @@
-# Übung 9: Git Reset - Commits zurücknehmen
+# Lab 09: Git Reset (Terminal)
 
 Mit `git reset` kannst du den Branch-Zeiger auf einen früheren Commit
 zurücksetzen. Das ist nützlich, wenn du Commits rückgängig machen möchtest, die
