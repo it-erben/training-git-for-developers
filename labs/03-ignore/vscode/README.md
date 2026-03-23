@@ -51,7 +51,7 @@ Dateibrowser ausgegraut ist. Das bedeutet, dass Änderungen an dieser Datei nun 
 
 ![](images/step_11.jpeg)
 
-12\. Gehe wieder in die Repository-Ansicht. Die Datei test.txt wird als geändert erscheinen, obwohl sie in der
+12\. Gehe wieder in die Repository-Ansicht. Die Datei file1.txt wird als geändert erscheinen, obwohl sie in der
 .gitignore ist! Das liegt daran, dass sie schon existierte, als sie noch nicht von Git ignoriert wurde.
 
 ![](images/step_12.jpeg)

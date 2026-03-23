@@ -22,7 +22,7 @@ Lerne, wie Änderungen am Repository in VS Code angezeigt und rückgängig gemac
 
 ![](images/step_05.jpeg)
 
-6\. Click here.
+6\. Klicke auf den kleinen blauen Balken
 
 ![](images/step_06.jpeg)
 

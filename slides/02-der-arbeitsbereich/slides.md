@@ -171,15 +171,3 @@ erstellt VS Code automatisch einen **Merge-Commit**.
 1. Erst `git pull` (um zu sehen, was kommt).
 2. Konflikte lokal lösen.
 3. Dann erst `git push`.
-
----
-
-## Zusammenfassung: Wichtigste Befehle
-
-| Ziel      | CLI                   | VS Code                    |
-|-----------|-----------------------|----------------------------|
-| Überblick | `git status -s`       | Source Control Panel       |
-| Prüfung   | `git diff --staged`   | Diff-Viewer (Side-by-Side) |
-| Präzision | `git add -p`          | Stage Selected Ranges      |
-| Ordnung   | `git commit` (Editor) | Commit Input Box           |
-| Historie  | `git log --graph`     | GitLens / Timeline         |
