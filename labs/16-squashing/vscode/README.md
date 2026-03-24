@@ -28,8 +28,8 @@ visuellen Interactive Rebase Editor.
 ## Commits zusammenfassen
 
 4. Der GitLens Interactive Rebase Editor öffnet sich. Du siehst alle 5 Commits
-   mit jeweils einem Dropdown auf "pick". Ändere bei den unteren vier Commits
-   das Dropdown von "pick" zu "squash". Der oberste Commit bleibt auf "pick".
+   mit jeweils einem Dropdown auf "pick". Ändere bei den oberen vier Commits
+   das Dropdown von "pick" zu "squash". Der unterste Commit bleibt auf "pick".
 
 ![](images/step_08.jpeg)
 
