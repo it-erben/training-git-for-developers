@@ -10,9 +10,9 @@ der Plattform: Suggestions, Draft PRs und die verschiedenen Merge-Strategien.
 ## Vorbereitung
 
 1. Bildet Zweierteams.
-2. Akzeptiert die GitHub-Classroom-Einladung — tretet eurem Team bei oder
+2. Akzeptiert die GitHub-Classroom-Einladung. Tretet eurem Team bei oder
    erstellt ein neues.
-3. Klont das Repository:
+3. Klont das Repository entweder in VS Code oder über die Kommandozeile:
 
    ```bash
    git clone <url-aus-classroom>
@@ -21,7 +21,7 @@ der Plattform: Suggestions, Draft PRs und die verschiedenen Merge-Strategien.
 
 ## Phase 1: Feature-Branches erstellen
 
-Jeder erstellt **einen eigenen** Feature-Branch und implementiert ein kleines
+Alle erstellen **einen eigenen** Feature-Branch und implementieren ein kleines
 Feature. Baut dabei **absichtlich** Probleme ein, die der Reviewer finden soll:
 
 ### Person A: `feature/item-discount`
@@ -75,11 +75,11 @@ Erstellt jeweils einen **Draft PR**:
 
 ## Phase 3: Code Review
 
-Wechselt die Rollen. Jeder reviewt den PR des Partners.
+Wechselt die Rollen. Alle reviewen den PR des Partners.
 
 **Review-Anforderungen (Minimum):**
 
-1. Mindestens **5 Kommentare** im Code-Diff — davon:
+1. Mindestens **5 Kommentare** im Code-Diff, zum Beispiel:
    - 2x inhaltliche Fehler (ApplicationArea, Validierung, etc.)
    - 1x Code-Qualität (Naming, Hardcoding, etc.)
    - 1x Commit-Hygiene (Messages, Granularität)
@@ -98,45 +98,28 @@ Wechselt die Rollen. Jeder reviewt den PR des Partners.
    ```
    ````
 
-3. Schließe das Review mit **"Request Changes"** ab (nicht Approve — es gibt ja
+3. Schließe das Review mit **"Request Changes"** ab (nicht Approve - es gibt ja
    Probleme).
 
 ## Phase 4: Feedback einarbeiten
 
 Arbeitet das Feedback ein:
 
-1. **Suggestions:** Klicke "Apply Suggestion" direkt auf GitHub (erstellt
+1. **Code-Änderungen:** Lokal bearbeiten, committen und pushen.
+2. **Commit-Hygiene:** Nutze Interactive Rebase, um die WIP-Commits aufzuräumen.
+   Macht danach einen Force-Push.
+
+> Ein Force Push ist hier akzeptabel, weil es sich um einen kurzlebigen
+> Feature Branch handelt. Gegen `main` bzw. `master` würden wir niemals
+> einen Force Push machen.
+
+3. **Suggestions:** Klicke "Apply Suggestion" direkt auf GitHub (erstellt
    einen Commit automatisch).
-2. **Code-Änderungen:** Lokal bearbeiten, committen und pushen.
-3. **Commit-Hygiene:** Nutze Interactive Rebase, um die WIP-Commits aufzuräumen:
-
-   ```bash
-   git rebase -i origin/main
-   ```
-
-   Squashe die zusammengehörigen Commits, verbessere die Messages. Danach:
-
-   ```bash
-   git push --force-with-lease
-   ```
-
 4. Antworte auf jeden Review-Kommentar im PR.
 
 ## Phase 5: Approve & Merge
 
 1. Der Reviewer prüft die Korrekturen und gibt ein **Approve**.
 2. Ändert den PR von Draft auf "Ready for review".
-3. **Merge-Strategie wählen** — mergt einen PR mit "Squash and Merge" und den
+3. **Merge-Strategie wählen** - mergt einen PR mit "Squash and Merge" und den
    anderen mit "Create a Merge Commit".
-4. Vergleicht: Wie sieht `git log --oneline --graph` danach jeweils aus?
-
-## Phase 6: Branch Protection (Bonus)
-
-Falls ihr Admin-Rechte habt:
-
-1. Richtet Branch Protection für `main` ein:
-   - Require pull request before merging
-   - Require 1 approval
-   - Require linear history (optional — diskutiert!)
-2. Versucht, direkt auf `main` zu pushen. Was passiert?
-3. Versucht, einen PR ohne Approval zu mergen. Was passiert?
