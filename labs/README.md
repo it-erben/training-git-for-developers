@@ -19,7 +19,7 @@ heruntergeladen werden.
 Öffnet in dem Verzeichnis, in dem ihr die Aufgaben ablegen wollt, eine 
 Git Bash.
 
-[](./images/windows_setup_02.jpg)
+![](./images/windows_setup_02.jpg)
 
 Clont nun das Repository mit folgendem Befehl:
 
@@ -35,7 +35,7 @@ cd git-for-developers/labs
 sh setup-all.sh
 ```
 
-[](./images/windows_setup_03.jpg)
+![](./images/windows_setup_03.jpg)
 
 ### Alle Aufgaben aufräumen
 
