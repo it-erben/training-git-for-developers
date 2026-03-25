@@ -16,6 +16,50 @@ Um die Aufgaben bearbeiten zu können, muss **Git Bash** installiert sein. Der
 Installer kann [hier](https://git-scm.com/install/windows)
 heruntergeladen werden.
 
+Öffnet in dem Verzeichnis, in dem ihr die Aufgaben ablegen wollt, eine 
+Git Bash.
+
+[](./images/windows_setup_02.jpg)
+
+Clont nun das Repository mit folgendem Befehl:
+
+```bash
+git clone https://gitlab.com/it-erben/gfu/git-for-developers.git
+```
+
+Anschließend wechselt ihr in das `labs`-Verzeichnis und führt das Setup-Skript
+aus:
+
+```bash
+cd git-for-developers/labs
+sh setup-all.sh
+```
+
+[](./images/windows_setup_03.jpg)
+
+### Alle Aufgaben aufräumen
+
+Um alle Aufgaben aufzuräumen, öffnet in dem Verzeichnis des Git-Repositories
+eine Git-Bash (siehe oben) und führt folgendes Skript aus:
+
+```bash
+cd labs
+sh clean-all.sh
+```
+
+### Einzelne Aufgaben vorbereiten
+
+Wenn ihr nur eine einzelne Aufgabe löschen und neu aufsetzen wollt, dann geht
+folgendermaßen vor:
+
+```bash
+cd labs/01-basic-commits # ersetzt dies mit eurem gewünschten Lab-Verzeichnis
+sh setup.sh
+```
+
+Um eine einzelne Aufgabe zu löschen, entfernt einfach das 
+`exercise`-Verzeichnis.
+
 ## Grundlagen
 
 | Lab                                       | Thema            | Beschreibung                                                                     |
