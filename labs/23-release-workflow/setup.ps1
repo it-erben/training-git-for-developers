@@ -204,11 +204,11 @@ git commit -m "add test maybe"
 
 git switch master
 
-# Cleanup local user config
-git config --local --unset user.name
-git config --local --unset user.email
-git config --local --unset commit.gpgsign
-git config --local --unset tag.gpgsign
+# Cleanup local user config (only unset if set by setup script)
+if ((git config --local user.name 2>$null) -eq "git-katas trainer bot") { git config --local --unset user.name }
+if ((git config --local user.email 2>$null) -eq "git-katas@example.com") { git config --local --unset user.email }
+git config --local --unset commit.gpgsign 2>$null
+git config --local --unset tag.gpgsign 2>$null
 
 Write-Host ""
 Write-Host "=================================================="
