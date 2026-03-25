@@ -7,7 +7,7 @@
 source ../utils/utils.sh
 
 
-pre-setup # Make exercise repo, and setup necessary.
+pre_setup # Make exercise repo, and setup necessary.
 
 echo "Initial content of the file" > file.txt
 touch fix.txt
@@ -29,4 +29,4 @@ echo "some changes I made and did not stage yet" >> file.txt
 
 echo "changes I did not stage" > fix.txt
 
-post-setup
+post_setup

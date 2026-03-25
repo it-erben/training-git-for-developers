@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 source ../utils/utils.sh
-pre-setup
+pre_setup
 
 # --- Lokales Repo mit Inhalt ---
 cat > README.md << 'EOF'
@@ -20,7 +20,7 @@ echo "version: 1.0" > config.txt
 git add config.txt
 git commit -m "Add config file"
 
-post-setup
+post_setup
 
 # --- Bare-Remote aus exercise erstellen ---
 cd ..

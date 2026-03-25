@@ -3,7 +3,7 @@
 # Include utils
 source ../utils/utils.sh
 
-make-exercise-repo
+make_exercise_repo
 
 for i in {1..10}
 do

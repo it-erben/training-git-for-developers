@@ -5,7 +5,7 @@ kata="kata6-save-my-commit"
 # Include utils
 source ../utils/utils.sh
 
-make-exercise-repo
+make_exercise_repo
 
 echo "initial" > thing.txt
 git add thing.txt

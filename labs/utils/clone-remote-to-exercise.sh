@@ -1,5 +1,5 @@
 #!/bin/bash
-clone-remote-to-exercise() {
+clone_remote_to_exercise() {
     rm -rf exercise/
 
     # Clone remote

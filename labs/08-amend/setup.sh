@@ -4,7 +4,7 @@
 
 source ../utils/utils.sh
 
-make-exercise-repo
+make_exercise_repo
 echo "foo" > foo.txt
 
 echo "bar" > bar.txt

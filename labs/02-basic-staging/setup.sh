@@ -5,10 +5,10 @@
 # Include utils
 source ../utils/utils.sh
 
-pre-setup # Make exercise repo, and setup necessary.
+pre_setup # Make exercise repo, and setup necessary.
 
 echo "v1" > file.txt
 git add file.txt
 git commit -m "1"
 
-post-setup
+post_setup

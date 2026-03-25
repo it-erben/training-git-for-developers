@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="$(basename $(pwd))"
-make-exercise-repo
+make_exercise_repo
 
 echo "dummy" > dummy.txt
 git add dummy.txt

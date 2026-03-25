@@ -5,7 +5,7 @@
 # Include utils
 source ../utils/utils.sh
 
-pre-setup # Make exercise repo, and setup necessary.
+pre_setup # Make exercise repo, and setup necessary.
 
 #Commit a
 echo -e "Ben\nTom\nSally" > names.txt
@@ -56,4 +56,4 @@ git commit -m "Commit H: Added the boring file"
 
 git checkout master
 
-post-setup
+post_setup
