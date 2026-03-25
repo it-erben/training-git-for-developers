@@ -4,7 +4,7 @@
 
 source ../utils/utils.sh
 
-make-exercise-repo
+make_exercise_repo
 echo "the original foo" > foo.txt
 git add foo.txt
 git commit -m "Add foo.txt"

@@ -1,5 +1,5 @@
 #!/bin/bash
-make-exercise-repo() {
+make_exercise_repo() {
 
     # First cleanup if there is an old exercise repository
     rm -rf exercise/

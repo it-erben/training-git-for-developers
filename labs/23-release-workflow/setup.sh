@@ -4,7 +4,7 @@
 # einem Feature-Branch mit unsauberen Commits und einem v1.0.0 Tag.
 
 source ../utils/utils.sh
-pre-setup
+pre_setup
 
 mkdir -p src test
 
@@ -217,7 +217,7 @@ git commit -m "add test maybe"
 
 git switch "$DEFAULT_BRANCH"
 
-post-setup
+post_setup
 
 echo ""
 echo "=================================================="

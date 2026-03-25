@@ -3,7 +3,7 @@
 # Erstellt ein Repo mit typischen Anfänger-Problemen.
 
 source ../utils/utils.sh
-pre-setup
+pre_setup
 
 # --- Sauberer erster Commit ---
 mkdir -p src test .vscode .alpackages
@@ -140,7 +140,7 @@ git stash save "WIP: Sales Order Extension (fast fertig!)"
 echo "temporäre Notiz" > TODO.txt
 git add TODO.txt
 
-post-setup
+post_setup
 
 echo ""
 echo "=================================================="

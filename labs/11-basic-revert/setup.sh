@@ -5,7 +5,7 @@
 # Include utils
 source ../utils/utils.sh
 
-pre-setup # Make exercise repo, and setup necessary.
+pre_setup # Make exercise repo, and setup necessary.
 
 touch greeting.txt
 git add greeting.txt
@@ -20,4 +20,4 @@ echo "This should have been appended to the original content, rather than overwr
 git add greeting.txt
 git commit -m "Overwrite greeting.txt"
 
-post-setup
+post_setup

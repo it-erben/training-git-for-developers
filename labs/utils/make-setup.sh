@@ -8,7 +8,7 @@
 
 set -e
 
-config-local-username() {
+config_local_username() {
     # In the exercise repo, set local git user name and email to distinguish commits between user and setup script.
 
     EXERCISE_REPO_NAME='exercise'
@@ -23,7 +23,7 @@ config-local-username() {
     fi
 }
 
-clear-local-user() {
+clear_local_user() {
 # In the exercise repo, unset local git user name and email to distinguish commits between user and setup script.
 
     EXERCISE_REPO_NAME='exercise'
@@ -39,7 +39,7 @@ clear-local-user() {
 
 }
 
-config-local-gpgsigning() {
+config_local_gpgsigning() {
     # In the exercise repo, disable signing commits as it might be enabled globally.
     EXERCISE_REPO_NAME='exercise'
 
@@ -52,7 +52,7 @@ config-local-gpgsigning() {
     fi
 }
 
-clear-local-gpgsigning() {
+clear_local_gpgsigning() {
 # In the exercise repo, unset locally disabled signing of commits.
 
     EXERCISE_REPO_NAME='exercise'
@@ -66,23 +66,23 @@ clear-local-gpgsigning() {
     fi
 }
 
-pre-setup () {
+pre_setup () {
     kata="$(basename $(pwd))"   # kata: name of the exercise which is respective folder name
-    make-exercise-repo
-    config-local-username
-    config-local-gpgsigning
+    make_exercise_repo
+    config_local_username
+    config_local_gpgsigning
 }
 
-pre-setup-with-remote () {
+pre_setup_with_remote () {
     kata="$(basename $(pwd))"   # kata: name of the exercise which is respective folder name
-    make-bare-remote-repo 
-    clone-remote-to-exercise
-    config-local-username
-    config-local-gpgsigning
+    make_bare_remote_repo 
+    clone_remote_to_exercise
+    config_local_username
+    config_local_gpgsigning
 }
 
-post-setup () {
-    clear-local-user
-    clear-local-gpgsigning
+post_setup () {
+    clear_local_user
+    clear_local_gpgsigning
 }
 

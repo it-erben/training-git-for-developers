@@ -4,7 +4,7 @@ kata="kata2-squashing"
 # Include utils
 source ../utils/utils.sh
 
-make-exercise-repo
+make_exercise_repo
 
 touch alsoafile.txt
 

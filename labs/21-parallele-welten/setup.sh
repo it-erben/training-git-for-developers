@@ -4,7 +4,7 @@
 # gelöschten Branch und einem Detached HEAD.
 
 source ../utils/utils.sh
-pre-setup
+pre_setup
 
 mkdir -p src test
 
@@ -192,7 +192,7 @@ git branch -D feature/analytics
 FIRST_COMMIT=$(git rev-list --max-parents=0 HEAD)
 git checkout "$FIRST_COMMIT" 2>/dev/null
 
-post-setup
+post_setup
 
 echo ""
 echo "=================================================="
