@@ -16,7 +16,7 @@ Um die Aufgaben bearbeiten zu können, muss **Git Bash** installiert sein. Der
 Installer kann [hier](https://git-scm.com/install/windows)
 heruntergeladen werden.
 
-Öffnet in dem Verzeichnis, in dem ihr die Aufgaben ablegen wollt, eine 
+Öffnet in dem Verzeichnis, in dem ihr die Aufgaben ablegen wollt, eine
 Git Bash.
 
 ![](./images/windows_setup_02.jpg)
@@ -57,7 +57,7 @@ cd labs/01-basic-commits # ersetzt dies mit eurem gewünschten Lab-Verzeichnis
 sh setup.sh
 ```
 
-Um eine einzelne Aufgabe zu löschen, entfernt einfach das 
+Um eine einzelne Aufgabe zu löschen, entfernt einfach das
 `exercise`-Verzeichnis.
 
 ## Grundlagen
