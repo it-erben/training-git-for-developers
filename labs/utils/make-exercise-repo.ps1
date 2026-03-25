@@ -14,9 +14,13 @@ try {
 	# If there was an issue during git init the Get-ChildItem will fail
 	$null = Get-ChildItem .  -ErrorAction:Stop
 
-	# Set local git user name and email to distinguish commits.
-	git config --local user.name "git-katas trainer bot"
-	git config --local user.email "git-katas@example.com"
+	# Set local git user name and email only if not already configured.
+	if (-not (git config user.name 2>$null)) {
+		git config --local user.name "git-katas trainer bot"
+	}
+	if (-not (git config user.email 2>$null)) {
+		git config --local user.email "git-katas@example.com"
+	}
 	# Disable GPG signing as the trainer bot has no signing key.
 	git config --local commit.gpgsign "false"
 	git config --local tag.gpgsign "false"

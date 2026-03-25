@@ -10,6 +10,7 @@ set -e
 
 config_local_username() {
     # In the exercise repo, set local git user name and email to distinguish commits between user and setup script.
+    # Only set if not already configured (globally or locally) to avoid overwriting the user's identity.
 
     EXERCISE_REPO_NAME='exercise'
 
@@ -17,14 +18,18 @@ config_local_username() {
     REPO_NAME=$(basename ${REPO})
 
     if [[ ! -z ${REPO_NAME} && ${REPO_NAME} == 'exercise' ]]; then
-        git config --local user.name "git-katas trainer bot"
-        git config --local user.email "git-katas@example.com"
+        if ! git config user.name > /dev/null 2>&1; then
+            git config --local user.name "git-katas trainer bot"
+        fi
+        if ! git config user.email > /dev/null 2>&1; then
+            git config --local user.email "git-katas@example.com"
+        fi
         echo "Successfully configured local username and email"
     fi
 }
 
 clear_local_user() {
-# In the exercise repo, unset local git user name and email to distinguish commits between user and setup script.
+# In the exercise repo, unset local git user name and email only if we set them (value is trainer bot).
 
     EXERCISE_REPO_NAME='exercise'
 
@@ -32,8 +37,12 @@ clear_local_user() {
     REPO_NAME=$(basename ${REPO})
 
     if [[ ! -z ${REPO_NAME} && ${REPO_NAME} == 'exercise' ]]; then
-        git config --local --unset user.name
-        git config --local --unset user.email
+        if [[ "$(git config --local user.name 2>/dev/null)" == "git-katas trainer bot" ]]; then
+            git config --local --unset user.name
+        fi
+        if [[ "$(git config --local user.email 2>/dev/null)" == "git-katas@example.com" ]]; then
+            git config --local --unset user.email
+        fi
         echo "Successfully unset local username and email"
     fi
 
