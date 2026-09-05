@@ -153,3 +153,8 @@ Pronomen- und Leseransprache-Regel aufhebt.
 - Beispiel-Repositories in den Labs nutzen `master` als Standardbranch, die
   Folien reden von `main`. Beim Ändern eines Labs den Branchnamen prüfen, der
   im jeweiligen Setup-Skript wirklich entsteht.
+- **Die CI läuft auf zwei Plattformen.** `.gitlab-ci.yml` bindet die
+  GitLab-Komponenten ein, `.github/workflows/ci.yml` ruft `lint.yml`,
+  `slides.yml`, `release.yml` und `pages.yml` aus
+  `it-erben/ci`. Die PDFs gehen dort auf
+  GitHub Pages, ein Deployment gibt es auf GitHub nicht.
